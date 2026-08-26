@@ -4,6 +4,7 @@ import time
 from typing import Optional, List, Dict, Any
 from pydantic import BaseModel
 from openai import OpenAI
+from urllib.parse import quote
 
 from src.config import (
     LLM_API_KEY, 
@@ -396,7 +397,15 @@ CATATAN:
 
                 if needs_handover:
                     admin = self._get_next_markom_admin()
-                    wa_link = f"https://wa.me/{admin['phone']}"
+                    admin_phone = admin['phone']
+                    
+                    if admin_phone.startswith("0"):
+                        admin_phone = "62" + admin_phone[1:]
+                    elif admin_phone.startswith("+"):
+                        admin_phone = admin_phone[1:]
+                        
+                    message = "Halo Admin, saya butuh bantuan terkait pesanan catering."
+                    wa_link = f"https://api.whatsapp.com/send?phone={admin_phone}&text={quote(message)}"
 
                     response_json["assigned_admin"] = admin["name"]
                     response_json["handover_link"] = wa_link

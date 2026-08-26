@@ -5,7 +5,6 @@ import requests
 from typing import Optional, Tuple, List, Dict, Any
 
 PICKUP_FREE_RADIUS_KM = 3.0       # Gratis jika jarak < 3 km
-PICKUP_COST_PER_KM = 2000         # Rp 2.000 per km jika >= 3 km
 PICKUP_MANDATORY_THRESHOLD = 25   # < 25 box = wajib pickup
 
 class OutletService:
@@ -97,7 +96,7 @@ class OutletService:
         """Hitung ongkir pickup."""
         if distance_km < PICKUP_FREE_RADIUS_KM:
             return 0
-        return int(distance_km * PICKUP_COST_PER_KM)
+        return -1
 
     def is_pickup_mandatory(self, quantity: Optional[int]) -> bool:
         """Return True jika pesanan wajib pickup (qty < 25)."""
@@ -155,6 +154,8 @@ class OutletService:
             
             if cost == 0:
                 cost_str = "GRATIS ✅"
+            elif cost == -1:
+                cost_str = "Diskusikan dengan Admin 👨‍💻"
             else:
                 # Format ke rupiah
                 cost_str = f"Rp {cost:,.0f}".replace(",", ".")

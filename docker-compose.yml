@@ -1,0 +1,41 @@
+services:
+  # Service 1: 9router
+  ninerouter:
+    build:
+      context: .
+      dockerfile: Dockerfile.9router
+    container_name: 9router
+    ports:
+      - "20128:20128"
+    volumes:
+      - C:\Users\Farhan Rahmansyah\AppData\Roaming\9router:/root/.9router
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - API_KEY=${NINEROUTER_API_KEY}
+
+  # Service 2: Aplikasi Chatbot (FastAPI)
+  chatbot:
+    build: .
+    container_name: chatbot-nasikotak
+    depends_on:
+      - ninerouter
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      # Arahkan langsung ke nama service ninerouter karena sekarang mereka berada di jaringan Docker yang sama
+      - LLM_BASE_URL=http://ninerouter:20128/v1
+    extra_hosts:
+      # Wajib agar host.docker.internal bisa diakses dari dalam container
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./data:/app/data
+      - ./src:/app/src
+      - ./app.py:/app/app.py
+      - ./knowledge_base:/app/knowledge_base
+      - ./faiss_index:/app/faiss_index
+

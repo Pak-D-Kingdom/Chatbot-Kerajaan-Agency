@@ -25,9 +25,9 @@ class RAGService:
         """
         self.index_dir = index_dir
         self.model_name = model_name
-        self.encoder = SentenceTransformer(model_name)
+        self.encoder = SentenceTransformer(self.model_name)
         self.dimension = self.encoder.get_sentence_embedding_dimension()
-        
+        print(f"Loaded {self.model_name} with dimension {self.dimension}")
         
         self.index = faiss.IndexFlatIP(self.dimension)
         self.documents: List[Document] = []

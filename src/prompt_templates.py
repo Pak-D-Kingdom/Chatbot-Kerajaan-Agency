@@ -150,7 +150,7 @@ Aturan delivery vs pickup berdasarkan jumlah pesanan:
 
 Ongkir pickup (dari alamat customer ke outlet terdekat):
 - Jarak < 3 km: GRATIS
-- Jarak >= 3 km: Rp 2.000 per km
+- Jarak >= 3 km: Diskusikan dengan Admin
 
 Alur pickup:
 - Jika customer bilang "ambil sendiri", "pickup", "ambil di tempat", atau pesanan < 25 box, set delivery_method="pickup" di entities.

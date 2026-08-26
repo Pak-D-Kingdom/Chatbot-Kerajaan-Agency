@@ -51,6 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // di-render sebagai bold/italic/heading/dll. Pengecualian: tanda **
     // (bold marker) dibuang duluan lewat stripMarkdownBold, jadi tidak
     // muncul sama sekali di layar.
+    function linkify(str) {
+        const urlRegex = /(https?:\/\/[^\s<]+)/g;
+        return str.replace(urlRegex, '<a href="$1" target="_blank" rel="noopener noreferrer" style="color: #e65100; font-weight: bold; text-decoration: underline;">$1</a>');
+    }
+
     function renderBotContent(content) {
         content = stripMarkdownBold(content);
 
@@ -62,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         while ((match = imageRegex.exec(content)) !== null) {
             // Teks sebelum gambar: escape lalu ubah newline jadi <br>
             const textBefore = content.slice(lastIndex, match.index);
-            html += escapeHtml(textBefore).replace(/\n/g, '<br>');
+            html += linkify(escapeHtml(textBefore)).replace(/\n/g, '<br>');
 
             const alt = escapeHtml(match[1]);
             const url = escapeHtml(match[2]);
@@ -71,10 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
             lastIndex = imageRegex.lastIndex;
         }
 
-        // Sisa teks setelah gambar terakhir (atau seluruh teks jika tidak
-        // ada gambar sama sekali)
+        // Sisa teks setelah gambar terakhir
         const textAfter = content.slice(lastIndex);
-        html += escapeHtml(textAfter).replace(/\n/g, '<br>');
+        html += linkify(escapeHtml(textAfter)).replace(/\n/g, '<br>');
 
         return html;
     }

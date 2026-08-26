@@ -129,16 +129,45 @@ class ChatPipeline:
             delivery_method = "pickup"
             analysis.delivery_method = "pickup"
 
-        # Jika pickup + ada lokasi -> cari outlet terdekat
-        if delivery_method == "pickup" and location:
+        # Cek jarak ke outlet terdekat jika ada lokasi
+        if location:
             nearest = self.outlet_service.find_nearest_by_address(location, limit=3)
             if nearest:
-                outlet_info = self.outlet_service.format_outlet_info(nearest)
-                base_reply = llm_response.get("reply", "").rstrip()
-                llm_response["reply"] = (
-                    f"{base_reply}\n\n"
-                    f"📍 **Outlet Terdekat dari lokasi kakak:**\n{outlet_info}"
-                )
+                min_distance = nearest[0]["distance_km"]
+                # Jika jarak > 3 km dan belum ada flag handover dari LLM
+                if min_distance > 3.0 and not llm_response.get("needs_handover"):
+                    llm_response["needs_handover"] = True
+                    llm_response["handover_reason"] = f"Jarak pengiriman > 3 km ({min_distance} km), perlu diskusi ongkir."
+                    
+                    admin = self.llm._get_next_markom_admin()
+                    admin_phone = admin['phone']
+                    if admin_phone.startswith("0"):
+                        admin_phone = "62" + admin_phone[1:]
+                    elif admin_phone.startswith("+"):
+                        admin_phone = admin_phone[1:]
+                    
+                    from urllib.parse import quote
+                    message = f"Halo Admin, saya ingin diskusi mengenai ongkir pesanan catering ke {location}."
+                    wa_link = f"https://api.whatsapp.com/send?phone={admin_phone}&text={quote(message)}"
+                    
+                    llm_response["assigned_admin"] = admin["name"]
+                    llm_response["handover_link"] = wa_link
+                    if "handover_admin" not in llm_response.get("actions", []):
+                        llm_response.setdefault("actions", []).append("handover_admin")
+                        
+                    base_reply = llm_response.get("reply", "").rstrip()
+                    llm_response["reply"] = (
+                        f"{base_reply}\n\nLokasi pengiriman berjarak {min_distance} km dari outlet terdekat. "
+                        f"Untuk hal ini, saya hubungkan ke admin kami untuk diskusi ongkir ya kak 🙏\n"
+                        f"{admin['name']}: {wa_link}"
+                    )
+                elif delivery_method == "pickup":
+                    outlet_info = self.outlet_service.format_outlet_info(nearest)
+                    base_reply = llm_response.get("reply", "").rstrip()
+                    llm_response["reply"] = (
+                        f"{base_reply}\n\n"
+                        f"📍 **Outlet Terdekat dari lokasi kakak:**\n{outlet_info}"
+                    )
 
         # --- 6. Update session context ---
         updated_session = self.conv_manager.update_session(session_id, analysis)
