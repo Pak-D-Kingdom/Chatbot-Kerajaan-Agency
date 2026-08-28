@@ -3,6 +3,7 @@ import uvicorn
 from fastapi import FastAPI, HTTPException, Request, Response, Cookie, Depends, Header
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
 
@@ -14,6 +15,14 @@ init_db()
 
 # Initialize FastAPI app
 app = FastAPI(title="AI Sales Chatbot API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://yourdomain.com"],  # Domain Laravel Anda
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Initialize ChatPipeline
 pipeline = ChatPipeline()
