@@ -1,280 +1,272 @@
-import uuid
 from typing import Optional, Dict, Any
+
 from sqlalchemy.orm import Session
 
-from src.config import FAISS_INDEX_DIR, MAX_CONVERSATION_HISTORY, RAG_TOP_K, RAG_MAX_CONTEXT_TOKENS
+from src.config import (
+    FAISS_INDEX_DIR,
+    MAX_CONVERSATION_HISTORY,
+    RAG_TOP_K,
+    RAG_MAX_CONTEXT_TOKENS,
+)
+
 from src.llm_service import LLMService
 from src.rag_service import RAGService
-from src.sales_engine import SalesEngine, MessageAnalysis
 from src.conversation_manager import ConversationManager
-from src.lead_manager import LeadManager
-from src.database import get_db, init_db
-from src.outlet_service import OutletService
+
 
 class ChatPipeline:
     """
-    Full end-to-end chatbot pipeline.
-    Menggabungkan: RAG retrieval -> LLM -> Sales Engine -> Lead Management
+    Pipeline utama chatbot Kerajaan Agency.
+
+    Flow:
+
+        User Message
+              ↓
+        Conversation Manager
+              ↓
+        RAG Retrieval
+              ↓
+        Prompt Templates
+              ↓
+        LLM
+              ↓
+        Natural Response
+              ↓
+        Telegram
     """
 
     def __init__(self):
         self.llm = LLMService()
-        self.rag = RAGService(index_dir=FAISS_INDEX_DIR)
-        self.rag.load_index()                  # Load FAISS index dari disk
-        self.sales = SalesEngine()
-        self.conv_manager = ConversationManager()
-        self.lead_manager = LeadManager()
-        self.outlet_service = OutletService()
-    
-    def chat(self, user_message: str, session_id: str = None, 
-             db: Session = None) -> Dict[str, Any]:
-        """
-        Full pipeline:
-        1. Load/create session
-        2. RAG retrieval
-        3. Build prompt (system + RAG context + history + message)
-        4. Call LLM -> structured output
-        5. Run sales engine (recommendation, price calc, upsell)
-        6. Update session context
-        7. Check lead trigger
-        8. Return response
-        """
-        # --- 1. Session ---
-        if session_id is None:
-            session_id = str(uuid.uuid4())
-        session = self.conv_manager.get_session(session_id)
 
-        # --- 2. RAG Retrieval ---
-        rag_results = self.rag.search(user_message, top_k=RAG_TOP_K)
-        rag_context = self.rag.construct_context(rag_results, max_chars=RAG_MAX_CONTEXT_TOKENS)
-
-        # --- 3+4. LLM Call with history ---
-        history = self.conv_manager.get_history(session_id, 
-                                                 limit=MAX_CONVERSATION_HISTORY)
-        # Convert history format: {"sender":..., "text":...} -> {"role":..., "content":...}
-        formatted_history = []
-        for msg in history:
-            role = "assistant" if msg.get("sender") == "bot" else "user"
-            formatted_history.append({"role": role, "content": msg.get("text", "")})
-        
-        # Inject RAG context into collected entities for LLM awareness
-        collected_entities = {
-            "quantity": session.get("quantity"),
-            "budget_per_box": session.get("budget_per_box"),
-            "event_type": session.get("event_type"),
-            "location": session.get("location"),
-            "event_date": session.get("event_date"),
-            "customer_name": session.get("customer_name"),
-            "customer_phone": session.get("customer_phone"),
-            "package_name": session.get("selected_product"),
-            "delivery_method": session.get("delivery_method"),
-        }
-
-        # Prepend RAG context to user message for grounding
-        augmented_message = user_message
-        if rag_context:
-            augmented_message = (
-                f"[KONTEKS DARI KNOWLEDGE BASE]\n{rag_context}\n"
-                f"[END KONTEKS]\n\n"
-                f"Pesan customer: {user_message}"
-            )
-
-        llm_response = self.llm.chat_with_history(
-            user_message=augmented_message,
-            history=formatted_history,
-            collected_entities=collected_entities,
-            raw_user_message=user_message
+        self.rag = RAGService(
+            index_dir=FAISS_INDEX_DIR
         )
 
-        # Jika LLMService gagal total (lihat chat_with_history's except block),
-        # ia return {"error": "..."} tanpa key "reply". Tanpa penanganan ini,
-        # customer akan menerima bubble kosong tanpa penjelasan apa pun.
-        if "error" in llm_response and "reply" not in llm_response:
-            print(f"[ERROR] chat_with_history gagal untuk session {session_id}: {llm_response['error']}")
-            llm_response = {
+        self.rag.load_index()
+
+        self.conv_manager = ConversationManager()
+
+    def _build_system_prompt(
+        self,
+        rag_context: str,
+    ) -> str:
+        """
+        Membuat system prompt untuk chatbot Kerajaan Agency.
+
+        Prompt utama sebaiknya dikelola di prompt_templates.py.
+        """
+
+        base_prompt = """
+You are the official AI assistant of Kerajaan Agency.
+
+Your role is to help users understand Kerajaan Agency,
+its creator ecosystem, opportunities, and recruitment
+information.
+
+CONVERSATION POLICY:
+- Users communicate naturally through chat.
+- Do not require Telegram commands.
+- Answer the user's actual question directly.
+- Maintain conversation context when relevant.
+- Be helpful, friendly, concise, and natural.
+
+KNOWLEDGE POLICY:
+- Use the provided Knowledge Base as the primary source
+  of factual information.
+- Only provide factual claims supported by the Knowledge Base.
+- Do not invent information.
+- Do not guess missing information.
+- Do not make up commission amounts.
+- Do not promise income.
+- Do not promise guaranteed sales.
+- Do not promise guaranteed results.
+- Do not invent products, programs, requirements,
+  policies, or benefits.
+
+RECRUITMENT POLICY:
+- If the user shows genuine interest in becoming a
+  KOL, Creator, or Affiliate, explain the relevant
+  opportunity based on the Knowledge Base.
+- Provide registration information only when appropriate.
+- Do not repeatedly promote registration.
+- Informational questions should be answered directly
+  without forcing a registration CTA.
+
+FALLBACK POLICY:
+- If the requested information is not available
+  in the Knowledge Base, clearly state that the
+  information is currently unavailable.
+- Never fill missing information with assumptions.
+
+OUT OF SCOPE:
+- If the question is unrelated to Kerajaan Agency,
+  creator ecosystem, KOL, Creator, Affiliate,
+  recruitment, or available Knowledge Base information,
+  politely explain what topics you can help with.
+
+KNOWLEDGE BASE CONTEXT:
+"""
+
+        if rag_context:
+            base_prompt += f"\n{rag_context}"
+        else:
+            base_prompt += (
+                "\nNo relevant Knowledge Base context was found."
+            )
+
+        return base_prompt
+
+    def chat(
+        self,
+        user_message: str,
+        session_id: Optional[str] = None,
+        db: Optional[Session] = None,
+    ) -> Dict[str, Any]:
+        """
+        Memproses satu pesan user melalui pipeline AI.
+        """
+
+        if not user_message or not user_message.strip():
+            return {
+                "session_id": session_id,
                 "reply": (
-                    "Maaf kak, sistem kami sedang sedikit gangguan 🙏 "
-                    "Boleh coba kirim ulang pesannya sebentar lagi?"
+                    "Silakan kirim pertanyaan yang ingin kamu "
+                    "ketahui tentang Kerajaan Agency 😊"
                 ),
-                "intent": "other",
-                "purchase_intent": "low",
-                "entities": {},
-                "actions": [],
-                "needs_handover": False,
-                "handover_reason": None,
+                "rag_sources": [],
             }
 
-        # --- 5. Sales Engine: enrich response ---
-        # Parse entities from LLM response to update session
-        entities = llm_response.get("entities", {})
-        analysis = MessageAnalysis(
-            intent=llm_response.get("intent", "other"),
-            purchase_intent=(llm_response.get("purchase_intent") or "LOW").upper(),
-            budget=entities.get("budget_per_box"),
-            quantity=entities.get("quantity"),
-            event_type=entities.get("event_type"),
-            location=entities.get("location"),
-            event_date=entities.get("event_date"),
-            package_name=entities.get("package_name"),
-            delivery_method=entities.get("delivery_method"),
+        user_message = user_message.strip()
+
+        # =====================================================
+        # 1. Session
+        # =====================================================
+
+        if session_id is None:
+            session_id = f"telegram_{id(user_message)}"
+
+        self.conv_manager.get_session(session_id)
+
+        # =====================================================
+        # 2. Conversation History
+        # =====================================================
+
+        history = self.conv_manager.get_history(
+            session_id=session_id,
+            limit=MAX_CONVERSATION_HISTORY,
         )
-        
-        # --- 5.5. Pickup Business Logic ---
-        delivery_method = entities.get("delivery_method") or session.get("delivery_method")
-        location = entities.get("location") or session.get("location")
-        quantity = entities.get("quantity") or session.get("quantity")
 
-        # Auto-set pickup jika qty < 25
-        if quantity and quantity < 25 and delivery_method != "pickup":
-            delivery_method = "pickup"
-            analysis.delivery_method = "pickup"
+        # =====================================================
+        # 3. RAG Retrieval
+        # =====================================================
 
-        # Cek jarak ke outlet terdekat jika ada lokasi
-        if location:
-            nearest = self.outlet_service.find_nearest_by_address(location, limit=3)
-            if nearest:
-                min_distance = nearest[0]["distance_km"]
-                # Jika jarak > 3 km dan belum ada flag handover dari LLM
-                if min_distance > 3.0 and not llm_response.get("needs_handover"):
-                    llm_response["needs_handover"] = True
-                    llm_response["handover_reason"] = f"Jarak pengiriman > 3 km ({min_distance} km), perlu diskusi ongkir."
-                    
-                    admin = self.llm._get_next_markom_admin()
-                    admin_phone = admin['phone']
-                    if admin_phone.startswith("0"):
-                        admin_phone = "62" + admin_phone[1:]
-                    elif admin_phone.startswith("+"):
-                        admin_phone = admin_phone[1:]
-                    
-                    from urllib.parse import quote
-                    message = f"Halo Admin, saya ingin diskusi mengenai ongkir pesanan catering ke {location}."
-                    wa_link = f"https://api.whatsapp.com/send?phone={admin_phone}&text={quote(message)}"
-                    
-                    llm_response["assigned_admin"] = admin["name"]
-                    llm_response["handover_link"] = wa_link
-                    if "handover_admin" not in llm_response.get("actions", []):
-                        llm_response.setdefault("actions", []).append("handover_admin")
-                        
-                    base_reply = llm_response.get("reply", "").rstrip()
-                    llm_response["reply"] = (
-                        f"{base_reply}\n\nLokasi pengiriman berjarak {min_distance} km dari outlet terdekat. "
-                        f"Untuk hal ini, saya hubungkan ke admin kami untuk diskusi ongkir ya kak 🙏\n"
-                        f"{admin['name']}: {wa_link}"
-                    )
-                elif delivery_method == "pickup":
-                    outlet_info = self.outlet_service.format_outlet_info(nearest)
-                    base_reply = llm_response.get("reply", "").rstrip()
-                    llm_response["reply"] = (
-                        f"{base_reply}\n\n"
-                        f"📍 **Outlet Terdekat dari lokasi kakak:**\n{outlet_info}"
-                    )
+        rag_results = self.rag.search(
+            user_message,
+            top_k=RAG_TOP_K,
+        )
 
-        # --- 6. Update session context ---
-        updated_session = self.conv_manager.update_session(session_id, analysis)
+        rag_context = self.rag.construct_context(
+            rag_results,
+            max_chars=RAG_MAX_CONTEXT_TOKENS,
+        )
 
-        # --- 6.5 Invoice Generation ---
-        if "generate_invoice" in llm_response.get("actions", []):
-            pkg_name = updated_session.get("selected_product")
-            qty = updated_session.get("quantity")
-            if pkg_name and qty:
-                products = self.sales.get_all_products(db)
-                product = next((p for p in products if pkg_name.lower() in p.name.lower()), None)
-                if product:
-                    try:
-                        price_info = self.sales.calculate_price(db, product, qty)
-                        total_price = price_info.get("final_total", 0)
-                    except ValueError:
-                        # Fallback if quantity < minimum_order (should not happen if LLM did its job, but just in case)
-                        total_price = product.price * qty
-                        
-                    final_price = product.price # harga satuan
-                    
-                    ongkir = 0
-                    if delivery_method == "pickup":
-                        if 'nearest' in locals() and nearest:
-                            ongkir = nearest[0].get("pickup_cost", 0)
-                            outlet_name = nearest[0].get("name", "Outlet")
-                            deliv_str = f"Pickup di {outlet_name}"
-                        else:
-                            ongkir = 0
-                            deliv_str = f"Pickup di outlet terdekat (Menunggu konfirmasi)"
-                    else:
-                        deliv_str = f"Delivery ke {updated_session.get('location', '-')}"
-                    
-                    grand_total = total_price + ongkir
-                    ongkir_str = f"Rp{ongkir:,.0f}" if ongkir > 0 else "Konfirmasi Admin" if delivery_method != "pickup" else "GRATIS"
-                    
-                    invoice_text = (
-                        f"📝 **Ringkasan Pesanan**\n"
-                        f"• Paket: {product.name}\n"
-                        f"• Harga Satuan: Rp{final_price:,.0f}\n"
-                        f"• Jumlah: {qty} box\n"
-                        f"• Subtotal: Rp{total_price:,.0f}\n"
-                        f"• Metode: {deliv_str}\n"
-                        f"• Ongkir: {ongkir_str}\n"
-                        f"• **TOTAL ESTIMASI: Rp{grand_total:,.0f}**\n\n"
-                        f"Pesanan kakak sudah siap! Silakan klik tombol di bawah ini untuk mengirim pesanan ke Admin kami melalui WhatsApp ya kak 👇"
-                    )
-                    
-                    updated_session["invoice_text"] = invoice_text
-                    updated_session["purchase_intent"] = "READY_TO_ORDER"
-                    
-                    base_reply = llm_response.get("reply", "").rstrip()
-                    llm_response["reply"] = f"{base_reply}\n\n{invoice_text}"
+        # =====================================================
+        # 4. Build System Prompt
+        # =====================================================
 
-        # Save messages to memory (and optionally DB)
-        if db:
-            self.conv_manager.add_message(db, session_id, "user", user_message,
-                                           intent=analysis.intent, 
-                                           purchase_intent=analysis.purchase_intent)
-            self.conv_manager.add_message(db, session_id, "bot", 
-                                           llm_response.get("reply", ""),
-                                           intent=analysis.intent,
-                                           purchase_intent=analysis.purchase_intent)
-        else:
-            # In-memory only
-            session["messages"].append({"sender": "user", "text": user_message})
-            session["messages"].append({"sender": "bot", "text": llm_response.get("reply", "")})
+        system_prompt = self._build_system_prompt(
+            rag_context=rag_context
+        )
 
-        # --- 7. Lead trigger ---
-        lead_saved = None
-        whatsapp_link = None
-        current_intent = updated_session.get("purchase_intent", "LOW")
-        if self.lead_manager.should_capture_lead(current_intent) and db:
-            lead_saved = self.lead_manager.save_lead(db, updated_session)
-            # Generate WhatsApp link if admin assigned
-            assigned_admin = llm_response.get("assigned_admin")
-            if not assigned_admin:
-                admin = self.llm._get_next_markom_admin()
-                admin_phone = admin["phone"]
-            else:
-                # Find phone from admin name
-                from src.config import MARKOM_ADMINS
-                admin_phone = next(
-                    (a["phone"] for a in MARKOM_ADMINS if a["name"] == assigned_admin),
-                    MARKOM_ADMINS[0]["phone"]
-                )
-            whatsapp_link = self.lead_manager.generate_whatsapp_link(
-                admin_phone, updated_session
+        # =====================================================
+        # 5. Build LLM Messages
+        # =====================================================
+
+        messages = [
+            {
+                "role": "system",
+                "content": system_prompt,
+            }
+        ]
+
+        messages.extend(history)
+
+        messages.append(
+            {
+                "role": "user",
+                "content": user_message,
+            }
+        )
+
+        # =====================================================
+        # 6. Call LLM
+        # =====================================================
+
+        try:
+            reply = self.llm.generate_response(
+                messages=messages
             )
 
-        # --- 8. Build final response ---
-        result = {
+        except Exception as exc:
+            print(
+                f"[ERROR] LLM gagal untuk session "
+                f"{session_id}: {exc}"
+            )
+
+            reply = (
+                "Maaf kak, sistem kami sedang mengalami "
+                "gangguan 🙏\n\n"
+                "Boleh coba kirim ulang pertanyaannya "
+                "sebentar lagi?"
+            )
+
+        # =====================================================
+        # 7. Save Conversation
+        # =====================================================
+
+        if db is not None:
+            self.conv_manager.add_message(
+                db=db,
+                session_id=session_id,
+                sender="user",
+                message=user_message,
+            )
+
+            self.conv_manager.add_message(
+                db=db,
+                session_id=session_id,
+                sender="bot",
+                message=reply,
+            )
+
+        else:
+            session = self.conv_manager.get_session(
+                session_id
+            )
+
+            session["messages"].append(
+                {
+                    "sender": "user",
+                    "text": user_message,
+                }
+            )
+
+            session["messages"].append(
+                {
+                    "sender": "bot",
+                    "text": reply,
+                }
+            )
+
+        # =====================================================
+        # 8. Build Result
+        # =====================================================
+
+        return {
             "session_id": session_id,
-            "reply": llm_response.get("reply", ""),
-            "intent": llm_response.get("intent", "other"),
-            "purchase_intent": current_intent,
-            "entities": dict(updated_session),
-            "actions": llm_response.get("actions", []),
-            "needs_handover": llm_response.get("needs_handover", False),
-            "handover_reason": llm_response.get("handover_reason"),
-            "rag_sources": [doc.metadata.get("source", "") for doc in rag_results],
+            "reply": reply,
+            "rag_sources": [
+                doc.metadata.get("source", "")
+                for doc in rag_results
+            ],
         }
-
-        if lead_saved:
-            result["lead_id"] = lead_saved.id
-            result["lead_status"] = "captured"
-        if whatsapp_link:
-            result["whatsapp_link"] = whatsapp_link
-
-        return result
