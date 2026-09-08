@@ -3,8 +3,7 @@ import os
 # ============================================================
 # ENVIRONMENT SAFETY
 # ============================================================
-# Hindari parallel tokenizer / worker yang tidak diperlukan
-# untuk chatbot single-process.
+
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 os.environ.setdefault("OMP_NUM_THREADS", "1")
 os.environ.setdefault("MKL_NUM_THREADS", "1")
@@ -14,20 +13,16 @@ import glob
 import json
 import yaml
 import numpy as np
+import faiss
 
 from dataclasses import dataclass
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Tuple
 
 # ============================================================
 # SENTENCE TRANSFORMERS
 # ============================================================
-# Import SentenceTransformer sebelum FAISS.
-from sentence_transformers import SentenceTransformer
 
-# ============================================================
-# FAISS
-# ============================================================
-import faiss
+from sentence_transformers import SentenceTransformer
 
 
 # ============================================================
@@ -52,6 +47,25 @@ class Document:
 
 
 # ============================================================
+# SEARCH RESULT
+# ============================================================
+
+# Format hasil search:
+#
+# [
+#     (Document, score),
+#     (Document, score),
+#     ...
+# ]
+#
+# Format ini disesuaikan dengan pipeline.py yang menggunakan:
+#
+# for doc, _score in rag_results:
+#
+SearchResult = Tuple[Document, float]
+
+
+# ============================================================
 # RAG SERVICE
 # ============================================================
 
@@ -71,9 +85,7 @@ class RAGService:
         - cosine similarity melalui normalized embeddings
         - CPU sebagai default
 
-        Catatan:
-        FAISS index TIDAK dibuat pada __init__.
-        Index baru dibuat saat build_index() atau load_index().
+        FAISS index tidak dibuat pada __init__.
         """
 
         # ----------------------------------------------------
@@ -111,10 +123,7 @@ class RAGService:
         # ----------------------------------------------------
         # FAISS initially empty
         # ----------------------------------------------------
-        # Penting:
-        # Jangan membuat IndexFlatIP di sini.
-        # Ini mengurangi kemungkinan konflik native library
-        # saat SentenceTransformer melakukan encode().
+
         self.index = None
 
         # ----------------------------------------------------
@@ -179,7 +188,8 @@ class RAGService:
         """
         Membuat FAISS IndexFlatIP.
 
-        Dipanggil hanya ketika index memang diperlukan.
+        Karena embedding dinormalisasi,
+        Inner Product = cosine similarity.
         """
 
         self.index = faiss.IndexFlatIP(
@@ -1128,7 +1138,6 @@ class RAGService:
         """
         Memuat FAISS index dan metadata.
 
-        Penting:
         FAISS index baru dibaca setelah encoder selesai
         dibuat di __init__.
         """
@@ -1379,7 +1388,7 @@ class RAGService:
         metadata_filters: Optional[
             Dict[str, Any]
         ] = None,
-    ) -> List[Document]:
+    ) -> List[SearchResult]:
         """
         Semantic search menggunakan FAISS.
 
@@ -1388,8 +1397,18 @@ class RAGService:
             query: ...
             passage: ...
 
-        Karena embedding dinormalisasi,
-        IndexFlatIP menghasilkan cosine similarity.
+        Return:
+
+            [
+                (Document, score),
+                (Document, score),
+                ...
+            ]
+
+        Format ini kompatibel dengan pipeline.py:
+
+            for doc, _score in rag_results:
+                ...
         """
 
         # ----------------------------------------------------
@@ -1543,7 +1562,7 @@ class RAGService:
         # Build results
         # ----------------------------------------------------
 
-        results: List[Document] = []
+        results: List[SearchResult] = []
 
         for rank in range(
             len(indices[0])
@@ -1581,7 +1600,7 @@ class RAGService:
             )
 
             # ------------------------------------------------
-            # Copy metadata only
+            # Copy metadata
             # ------------------------------------------------
 
             metadata = dict(
@@ -1606,8 +1625,17 @@ class RAGService:
                 metadata=metadata,
             )
 
+            # ------------------------------------------------
+            # IMPORTANT:
+            #
+            # Return Document + score
+            # ------------------------------------------------
+
             results.append(
-                result_doc
+                (
+                    result_doc,
+                    score,
+                )
             )
 
             if len(results) >= top_k:
@@ -1629,7 +1657,7 @@ class RAGService:
 
         else:
 
-            for i, doc in enumerate(
+            for i, (doc, score) in enumerate(
                 results,
                 start=1,
             ):
@@ -1637,13 +1665,6 @@ class RAGService:
                 source = doc.metadata.get(
                     "source",
                     "Unknown",
-                )
-
-                score = float(
-                    doc.metadata.get(
-                        "relevance_score",
-                        0.0,
-                    )
                 )
 
                 preview = (
@@ -1672,7 +1693,7 @@ class RAGService:
         print()
 
         # ----------------------------------------------------
-        # Explicit cleanup of temporary NumPy arrays
+        # Cleanup
         # ----------------------------------------------------
 
         del query_embedding
@@ -1687,12 +1708,22 @@ class RAGService:
 
     def construct_context(
         self,
-        retrieved_docs: List[Document],
+        retrieved_docs: List[SearchResult],
         max_chars: int = 6000,
         min_score: float = 0.0,
     ) -> str:
         """
         Mengubah hasil retrieval menjadi context untuk LLM.
+
+        Input utama:
+
+            [
+                (Document, score),
+                ...
+            ]
+
+        Fungsi ini juga tetap menerima Document secara
+        langsung sebagai compatibility fallback.
         """
 
         if not retrieved_docs:
@@ -1705,14 +1736,56 @@ class RAGService:
 
         total_chars = 0
 
-        for doc in retrieved_docs:
+        for item in retrieved_docs:
 
-            score = float(
-                doc.metadata.get(
-                    "relevance_score",
-                    0.0,
+            # ------------------------------------------------
+            # Support tuple:
+            #
+            # (Document, score)
+            # ------------------------------------------------
+
+            if (
+                isinstance(item, tuple)
+                and len(item) == 2
+            ):
+
+                doc = item[0]
+                score = float(item[1])
+
+            # ------------------------------------------------
+            # Compatibility:
+            #
+            # Document langsung
+            # ------------------------------------------------
+
+            elif isinstance(
+                item,
+                Document,
+            ):
+
+                doc = item
+
+                score = float(
+                    doc.metadata.get(
+                        "relevance_score",
+                        0.0,
+                    )
                 )
-            )
+
+            else:
+
+                continue
+
+            # ------------------------------------------------
+            # Validate Document
+            # ------------------------------------------------
+
+            if not isinstance(
+                doc,
+                Document,
+            ):
+
+                continue
 
             # ------------------------------------------------
             # Minimum score
