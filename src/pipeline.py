@@ -73,7 +73,7 @@ class ChatPipeline:
             return {
                 "session_id": session_id,
                 "reply": (
-                    "Silakan kirim pertanyaan yang ingin kamu "
+                    "Silakan kirim pertanyaan yang ingin Anda "
                     "ketahui tentang Kerajaan Agency 😊"
                 ),
                 "intent": "FAQ",
@@ -170,10 +170,10 @@ class ChatPipeline:
             return {
                 "session_id": session_id,
                 "reply": (
-                    "Maaf kak, sistem kami sedang mengalami "
+                    "Mohon maaf, sistem kami sedang mengalami "
                     "gangguan 🙏\n\n"
-                    "Boleh coba kirim ulang pertanyaannya "
-                    "sebentar lagi?"
+                    "Silakan coba kirim ulang pertanyaan Anda "
+                    "beberapa saat lagi."
                 ),
                 "intent": "FAQ",
                 "show_cta": False,

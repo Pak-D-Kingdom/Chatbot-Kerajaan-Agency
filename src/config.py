@@ -97,6 +97,16 @@ REGISTRATION_URL = os.getenv(
     "https://kerajaanagency.com/daftar-kol"
 )
 
+TELEGRAM_CHANNEL_URL = os.getenv(
+    "TELEGRAM_CHANNEL_URL",
+    "https://t.me/+3ZJBNBYh8iU4MGM1"
+)
+
+WHATSAPP_CHANNEL_URL = os.getenv(
+    "WHATSAPP_CHANNEL_URL",
+    "https://whatsapp.com/channel/0029VbDUpC07T8bZYVq3KW02"
+)
+
 
 # ============================================================
 # Database & Storage Paths

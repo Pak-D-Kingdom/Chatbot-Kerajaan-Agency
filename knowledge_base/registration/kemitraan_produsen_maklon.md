@@ -22,8 +22,8 @@ Chatbot **Kerajaan Agency Bot** akan memberikan gambaran skema kerja sama dan me
 ### 2. Isi Formulir Kerja Sama Produk
 Lengkapi data yang dibutuhkan:
 - **Informasi Bisnis:** Nama Perusahaan / Pabrik / Badan Usaha, alamat operasional, dan kontak PIC / Manajemen.
-- **Profil Produk:** Nama brand/produk, kategori produk (misal: Kosmetik/Skincare, Suplemen/Kesehatan, Makanan & Minuman Kemasan, Fashion, Home Goods, Peralatan Rumah Tangga, dsb.).
-- **Kelengkapan Legalitas:** Nomor izin edar (BPOM, Sertifikat Halal MUI, Kemenkes, SNI, atau P-IRT).
+- **Profil Produk:** Nama brand/produk, kategori produk (misal: Kosmetik/Skincare, Suplemen/Kesehatan, Personal Care, Fashion, Home Living, Aksesori/Gadget, dsb.).
+- **Kelengkapan Legalitas:** Nomor izin edar (BPOM, Sertifikat Halal MUI, Kemenkes, atau SNI).
 - **Struktur Harga:** Estimasi HPP (Harga Pokok Produksi), harga grosir yang ditawarkan, dan HET (Harga Eceran Tertinggi) yang berlaku di pasar.
 - **Kapasitas Produksi:** Kemampuan volume produksi per minggu atau per bulan jika permintaan melonjak.
 - **Tautan Toko / Portofolio:** Tautan toko resmi (Shopee, TikTok Shop, Tokopedia) atau website brand jika sudah ada.

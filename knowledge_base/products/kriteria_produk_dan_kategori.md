@@ -20,7 +20,7 @@ Produk yang menyelesaikan masalah nyata memiliki daya tahan pasar yang panjang, 
 ## 🔍 7 Standar Kriteria Seleksi Produk Kerajaan Agency
 Setiap produk yang diajukan oleh produsen atau maklon wajib lolos evaluasi 7 parameter ketat di *Product Lab*:
 
-1. **Problem (Solutif Nyata):** Produk wajib menyelesaikan keluhan riil konsumen (misalnya: flek hitam membandel, bau mulut, noda kerak membandel, kebersihan dapur praktis, dll.).
+1. **Problem (Solutif Nyata):** Produk wajib menyelesaikan keluhan riil konsumen (misalnya: flek hitam membandel, noda kerak membandel, kulit kering, kerapian rumah tangga, dll.).
 2. **Demand (Pasar Luas):** Memiliki basis pasar yang besar dan aktif berbelanja di platform digital/marketplace.
 3. **Margin (Unit Economics Sehat):** Struktur biaya memungkinkan alokasi komisi yang menarik bagi kreator serta profit margin yang sehat bagi produsen dan agensi.
 4. **Contentability (Mudah Dibuat Konten):** Memiliki elemen visual dramatis (*visual hook*), mudah didemonstrasikan dalam video 15–60 detik, serta mudah dipahami manfaatnya oleh audiens.
@@ -55,13 +55,13 @@ Produk yang tidak memenuhi standar konversi pada tahap pilot test akan segera di
 ---
 
 ## 📦 Kategori Produk yang Diterima di Ekosistem Kerajaan Agency
-Kerajaan Agency membuka peluang distribusi untuk beragam kategori produk yang memenuhi izin edar resmi (BPOM/Halal/Kemenkes/SNI/P-IRT):
+Kerajaan Agency membuka peluang distribusi untuk beragam kategori produk non-makanan yang memenuhi izin edar resmi (BPOM/Halal/Kemenkes/SNI):
 - **Beauty & Skincare:** Perawatan kulit, pembersih wajah, serum, perlindungan matahari, dan kosmetik dekoratif yang aman ber-BPOM.
-- **Health, Wellness & Herbal:** Suplemen kesehatan harian, minuman serbuk herbal, vitamin, dan produk kebugaran terstandarisasi.
-- **Home & Living Essentials:** Pembersih serbaguna inovatif, aroma terapi, peralatan dapur praktis, dan solusi perawatan rumah tangga.
-- **Food & Beverage Kemasan:** Cemilan khas berkualitas, bumbu instan higienis, kopi, dan makanan olahan tahan simpan.
+- **Health, Wellness & Herbal:** Suplemen kesehatan harian, vitamin, aromaterapi, dan produk kebugaran terstandarisasi.
+- **Home & Living Essentials:** Pembersih serbaguna inovatif, perlengkapan dekorasi rumah, wewangian ruangan, dan solusi perawatan rumah tangga praktis.
 - **Fashion & Daily Wear:** Busana muslim, pakaian kasual berkarakter, aksesori fungsional, dan tas/dompet lokal berkualitas.
 - **Personal Care & Hygiene:** Sabun organik, perawatan rambut, parfum, dan produk perawatan diri harian.
+- **Gadget & Daily Accessories:** Aksesori smartphone fungsional, perlengkapan kerja kreatif, dan peralatan penunjang aktivitas harian.
 
 ---
 

@@ -28,7 +28,7 @@ Chatbot **Kerajaan Agency Bot** bertindak sebagai pemandu dan pemberi informasi.
 Lengkapi informasi profil yang diminta pada form pendaftaran:
 1. **Data Pribadi:** Nama lengkap, nomor WhatsApp aktif (untuk verifikasi dan undangan grup komunitas), serta alamat email.
 2. **Platform Media Sosial:** Tautan (*link*) profil utama Anda (TikTok, Instagram, YouTube, dll.).
-3. **Niche / Kategori Konten:** Pilih kategori yang paling sesuai dengan audiens Anda (misalnya: Kecantikan/Skincare, Fashion, Kuliner/Food, Home & Living, Gadget/Teknologi, Parenting, Kesehatan/Fitness, atau Lifestyle).
+3. **Niche / Kategori Konten:** Pilih kategori yang paling sesuai dengan audiens Anda (misalnya: Kecantikan/Skincare, Fashion, Home & Living, Gadget/Teknologi, Parenting, Kesehatan/Fitness, atau Lifestyle).
 4. **Metrik Sosial Media:** Masukkan jumlah pengikut (*followers*) terkini dan estimasi rata-rata views video Anda.
 5. **Rate Card (Opsional):** Jika Anda telah memiliki rate card sebelumnya, silakan lampirkan.
 

@@ -11,13 +11,13 @@ active: true
 **Tanya:** Siapa saja pihak produsen yang dapat mengajukan kerja sama dengan Kerajaan Agency?  
 **Jawab:** Kami membuka kemitraan untuk:
 - Pabrik manufaktur dan industri olahan.
-- Perusahaan penyedia jasa maklon (kosmetik, herbal, suplemen, makanan kemasan).
+- Perusahaan penyedia jasa maklon (kosmetik, skincare, herbal, suplemen, perlengkapan rumah tangga, personal care).
 - Pemilik brand lokal (*brand owners*) yang ingin memperluas kanal distribusi digital.
 - Distributor resmi dan supplier produk berstandar nasional.
 
 **Tanya:** Apa syarat wajib bagi produk yang ingin didistribusikan melalui jaringan Kerajaan Agency?  
 **Jawab:** Produk wajib memiliki:
-1. **Legalitas Resmi:** Izin edar yang masih berlaku (BPOM, Sertifikasi Halal MUI, Kemenkes, SNI, atau izin edar P-IRT resmi sesuai kategori produk).
+1. **Legalitas Resmi:** Izin edar yang masih berlaku (BPOM, Sertifikasi Halal MUI, Kemenkes, atau SNI resmi sesuai kategori produk).
 2. **Kualitas Konsisten:** Mutu bahan baku, formula, dan kemasan yang aman serta terstandarisasi.
 3. **Kapasitas Pasokan:** Kemampuan memenuhi lonjakan pesanan ribuan pcs per bulan saat kampanye berskala besar.
 4. **Harga Pokok Bersaing:** Memberikan ruang margin yang sehat untuk komisi kreator dan profit berkelanjutan.

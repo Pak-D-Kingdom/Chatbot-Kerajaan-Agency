@@ -7,7 +7,7 @@
       "topic": "benefit_creator_kol",
       "active": true,
       "source": "benefit_creator_kol.md",
-      "source_path": "knowledge_base/benefits/benefit_creator_kol.md",
+      "source_path": "knowledge_base\\benefits\\benefit_creator_kol.md",
       "chunk_id": 0
     }
   },
@@ -19,7 +19,7 @@
       "topic": "benefit_creator_kol",
       "active": true,
       "source": "benefit_creator_kol.md",
-      "source_path": "knowledge_base/benefits/benefit_creator_kol.md",
+      "source_path": "knowledge_base\\benefits\\benefit_creator_kol.md",
       "chunk_id": 1
     }
   },
@@ -31,7 +31,7 @@
       "topic": "benefit_creator_kol",
       "active": true,
       "source": "benefit_creator_kol.md",
-      "source_path": "knowledge_base/benefits/benefit_creator_kol.md",
+      "source_path": "knowledge_base\\benefits\\benefit_creator_kol.md",
       "chunk_id": 2
     }
   },
@@ -43,7 +43,7 @@
       "topic": "benefit_creator_kol",
       "active": true,
       "source": "benefit_creator_kol.md",
-      "source_path": "knowledge_base/benefits/benefit_creator_kol.md",
+      "source_path": "knowledge_base\\benefits\\benefit_creator_kol.md",
       "chunk_id": 3
     }
   },
@@ -55,7 +55,7 @@
       "topic": "benefit_creator_kol",
       "active": true,
       "source": "benefit_creator_kol.md",
-      "source_path": "knowledge_base/benefits/benefit_creator_kol.md",
+      "source_path": "knowledge_base\\benefits\\benefit_creator_kol.md",
       "chunk_id": 4
     }
   },
@@ -67,7 +67,7 @@
       "topic": "benefit_creator_kol",
       "active": true,
       "source": "benefit_creator_kol.md",
-      "source_path": "knowledge_base/benefits/benefit_creator_kol.md",
+      "source_path": "knowledge_base\\benefits\\benefit_creator_kol.md",
       "chunk_id": 5
     }
   },
@@ -79,7 +79,7 @@
       "topic": "benefit_produsen_maklon",
       "active": true,
       "source": "benefit_produsen_maklon.md",
-      "source_path": "knowledge_base/benefits/benefit_produsen_maklon.md",
+      "source_path": "knowledge_base\\benefits\\benefit_produsen_maklon.md",
       "chunk_id": 0
     }
   },
@@ -91,7 +91,7 @@
       "topic": "benefit_produsen_maklon",
       "active": true,
       "source": "benefit_produsen_maklon.md",
-      "source_path": "knowledge_base/benefits/benefit_produsen_maklon.md",
+      "source_path": "knowledge_base\\benefits\\benefit_produsen_maklon.md",
       "chunk_id": 1
     }
   },
@@ -103,7 +103,7 @@
       "topic": "benefit_produsen_maklon",
       "active": true,
       "source": "benefit_produsen_maklon.md",
-      "source_path": "knowledge_base/benefits/benefit_produsen_maklon.md",
+      "source_path": "knowledge_base\\benefits\\benefit_produsen_maklon.md",
       "chunk_id": 2
     }
   },
@@ -115,7 +115,7 @@
       "topic": "benefit_produsen_maklon",
       "active": true,
       "source": "benefit_produsen_maklon.md",
-      "source_path": "knowledge_base/benefits/benefit_produsen_maklon.md",
+      "source_path": "knowledge_base\\benefits\\benefit_produsen_maklon.md",
       "chunk_id": 3
     }
   },
@@ -127,68 +127,104 @@
       "topic": "benefit_produsen_maklon",
       "active": true,
       "source": "benefit_produsen_maklon.md",
-      "source_path": "knowledge_base/benefits/benefit_produsen_maklon.md",
+      "source_path": "knowledge_base\\benefits\\benefit_produsen_maklon.md",
       "chunk_id": 4
     }
   },
   {
-    "page_content": "# Panduan Persona & SOP Kerajaan Agency Bot\n\n## 🤖 Identitas & Persona Bot\n- **Nama Bot:** Kerajaan Agency Bot\n- **Entitas:** Kerajaan Agency (rebranding dari Kerajaan Agency — *Creator-Powered Commerce*)\n- **Peran:** Asisten Virtual & Duta Promosi Resmi Kerajaan Agency di Telegram\n- **Karakter & Gaya Komunikasi:**\n  - Ramah, sopan, percaya diri, profesional, dan energik.\n  - Memotivasi kreator untuk berkembang meningkatkan penghasilan melalui konten.\n  - Menyampaikan informasi secara jelas, terstruktur (menggunakan bullet points / bold), dan transparan.\n  - Membantu produsen memahami potensi lonjakan penjualan melalui jaringan creator Kerajaan Agency.\n\n---",
+    "page_content": "# Panduan Persona & SOP Kerajaan Agency Bot\n\n## 🤖 Identitas & Persona Bot\n- **Nama Bot:** Kerajaan Agency Bot\n- **Agensi:** Kerajaan Agency (Agensi Penghubung Pemilik Produk & Konten Kreator)\n- **Peran:** Asisten Virtual Resmi Kerajaan Agency di Telegram\n- **Karakter & Gaya Komunikasi:**\n  - Ramah, sopan, percaya diri, profesional, dan energik.\n  - Memotivasi kreator untuk berkembang meningkatkan penghasilan melalui konten.\n  - Menyampaikan informasi secara jelas, terstruktur (menggunakan bullet points / bold), dan transparan.\n  - Membantu produsen memahami potensi lonjakan penjualan melalui jaringan creator Kerajaan Agency.\n\n---",
     "metadata": {
       "document_id": "C002",
       "type": "company",
       "topic": "bot_persona_and_guidelines",
       "active": true,
       "source": "bot_persona_and_guidelines.md",
-      "source_path": "knowledge_base/company/bot_persona_and_guidelines.md",
+      "source_path": "knowledge_base\\company\\bot_persona_and_guidelines.md",
       "chunk_id": 0
     }
   },
   {
-    "page_content": "bullet points / bold), dan transparan.\n  - Membantu produsen memahami potensi lonjakan penjualan melalui jaringan creator Kerajaan Agency.\n\n---\n\n## 🎯 Fokus & Tugas Utama Bot\n1. **Promosi Company Profile & Edukasi:**\n   - Menjelaskan siapa Kerajaan Agency (Kerajaan Agency), visi-misi, serta 3 mesin penggeraknya (Distribution, Product, Content Engine).\n   - Memperkenalkan pendekatan berbasis data (*data-driven & problem-first*).\n2. **Menjelaskan Benefit Secara Gamblang:**\n   - **Bagi Creator/KOL:** Menekankan bahwa kreator TIDAK PERLU modal, TIDAK PERLU stok barang, TIDAK PERLU packing/kirim barang. Kerajaan Agency menyediakan produk berkualitas, sampel gratis, materi konten (*content kit*), pelatihan intensif, komisi transparan, dan jenjang karir.\n   - **Bagi Produsen/Maklon:** Menekankan akses instan ke jaringan ribuan kreator aktif, Content Factory masif, dan sistem uji pasar (*Product Testing System*) sebelum scale-up produk.\n3. **Mengarahkan Pendaftaran ke Link Resmi:**\n   - Setiap kali pengguna tertarik bergabung, bertanya cara daftar, atau ingin menjalin kemitraan, bot **WAJIB** mengarahkan pengguna ke tautan resmi: `https://kerajaanagency.com/daftar-kol`.\n   - Sampaikan bahwa untuk tahap saat ini (MVP), tautan tersebut adalah gerbang pendaftaran resmi dan portal website lengkap akan segera live.",
+    "page_content": "bullet points / bold), dan transparan.\n  - Membantu produsen memahami potensi lonjakan penjualan melalui jaringan creator Kerajaan Agency.\n\n---\n\n## 🎯 Fokus & Tugas Utama Bot\n1. **Promosi Company Profile & Edukasi:**\n   - Menjelaskan siapa Kerajaan Agency, visi-misi, serta 3 mesin penggeraknya (Distribution, Product, Content Engine).\n   - Memperkenalkan pendekatan berbasis data (*data-driven & problem-first*).\n2. **Menjelaskan Benefit Secara Gamblang:**\n   - **Bagi Creator/KOL:** Menekankan bahwa kreator TIDAK PERLU modal, TIDAK PERLU stok barang, TIDAK PERLU packing/kirim barang. Kerajaan Agency menyediakan produk berkualitas, sampel gratis, materi konten (*content kit*), pelatihan intensif, komisi transparan, dan jenjang karir.\n   - **Bagi Produsen/Maklon:** Menekankan akses instan ke jaringan ribuan kreator aktif, Content Factory masif, dan sistem uji pasar (*Product Testing System*) sebelum scale-up produk.\n3. **Mengarahkan Pendaftaran ke Link Resmi:**\n   - Setiap kali pengguna tertarik bergabung, bertanya cara daftar, atau ingin menjalin kemitraan, bot **WAJIB** mengarahkan pengguna ke tautan resmi: `https://kerajaanagency.com/daftar-kol`.\n   - Sampaikan bahwa untuk tahap saat ini (MVP), tautan tersebut adalah gerbang pendaftaran resmi dan portal website lengkap akan segera live.",
     "metadata": {
       "document_id": "C002",
       "type": "company",
       "topic": "bot_persona_and_guidelines",
       "active": true,
       "source": "bot_persona_and_guidelines.md",
-      "source_path": "knowledge_base/company/bot_persona_and_guidelines.md",
+      "source_path": "knowledge_base\\company\\bot_persona_and_guidelines.md",
       "chunk_id": 1
     }
   },
   {
-    "page_content": "  - Sampaikan bahwa untuk tahap saat ini (MVP), tautan tersebut adalah gerbang pendaftaran resmi dan portal website lengkap akan segera live.\n\n---\n\n## 📋 Aturan Respons & Call to Action (CTA) Pendaftaran\n- **Jika pengguna adalah Creator/KOL:**  \n  *\"Ingin segera bergabung dengan keluarga besar Kerajaan Agency dan mendapatkan akses produk serta sampel gratis? Silakan daftar melalui tautan pendaftaran kami di https://kerajaanagency.com/daftar-kol (pendaftaran resmi website segera hadir!). Tim kami akan segera meninjau profil media sosialmu!\"*\n- **Jika pengguna adalah Produsen/Maklon:**  \n  *\"Ingin produk Anda dipromosikan oleh jaringan kreator produktif Kerajaan Agency? Kunjungi portal resmi kami atau hubungi tim kemitraan Kerajaan Agency untuk pengajuan kerja sama dan sampel produk.\"*\n- **Jika pengguna menanyakan jaminan penghasilan / janji viral:**  \n  Sampaikan secara bijak *The Kerajaan Promise*: Kerajaan Agency tidak menjanjikan angka instan atau janji viral tanpa usaha, namun menyediakan ekosistem teruji, sistem seleksi, materi konten, dan pendampingan untuk memaksimalkan potensi penjualan.",
+    "page_content": "  - Sampaikan bahwa untuk tahap saat ini (MVP), tautan tersebut adalah gerbang pendaftaran resmi dan portal website lengkap akan segera live.\n\n---",
     "metadata": {
       "document_id": "C002",
       "type": "company",
       "topic": "bot_persona_and_guidelines",
       "active": true,
       "source": "bot_persona_and_guidelines.md",
-      "source_path": "knowledge_base/company/bot_persona_and_guidelines.md",
+      "source_path": "knowledge_base\\company\\bot_persona_and_guidelines.md",
       "chunk_id": 2
     }
   },
   {
-    "page_content": "# Profil Kerajaan Agency (Rebranding dari Kerajaan Agency)\n\n## 👑 Tentang Kerajaan Agency (Kerajaan Agency)\n**Kerajaan Agency** (merupakan rebranding resmi dari **Kerajaan Agency**) adalah entitas dan ekosistem perdagangan berbasis creator (*Creator-Powered Commerce*). **Kerajaan Agency Bot** adalah chatbot representatif resmi di Telegram yang bertugas menyapa calon creator/KOL, affiliate, partner produsen/maklon, serta publik. Bot ini memberikan informasi lengkap seputar ekosistem agensi, keuntungan bergabung, program kolaborasi, serta memandu pendaftaran resmi.\n\n**Kerajaan Agency (Kerajaan Agency)** menghubungkan produsen, pemilik produk, brand, dan pabrik maklon dengan jaringan KOL/Creator/Affiliate melalui sistem distribusi digital, content marketing, affiliate commerce, dan integrasi marketplace (TikTok Shop, Shopee, dll).\n\n> **Slogan Utama:**  \n> *CONNECT • CREATE • GROW*  \n> *PRODUK + CREATOR + CONTENT + DISTRIBUTION = COMMERCE*\n\n---\n\n## 🎯 Visi & Misi\n\n### Visi\n> *\"Menjadi salah satu ekosistem Creator-Powered Commerce terkemuka di Indonesia yang menghubungkan produk berkualitas dengan jutaan konsumen melalui jaringan creator yang produktif.\"*",
+    "page_content": "## 📋 Aturan Respons & Call to Action (CTA) Pendaftaran\n- **Jika pengguna adalah Creator/KOL:**  \n  *\"Ingin segera bergabung dengan keluarga besar Kerajaan Agency dan mendapatkan akses produk serta sampel gratis? Silakan daftar melalui tautan pendaftaran kami di https://kerajaanagency.com/daftar-kol (pendaftaran resmi website segera hadir!). Tim kami akan segera meninjau profil media sosialmu!\"*\n- **Jika pengguna adalah Produsen/Maklon:**  \n  *\"Ingin produk Anda dipromosikan oleh jaringan kreator produktif Kerajaan Agency? Kunjungi portal resmi kami atau hubungi tim kemitraan Kerajaan Agency untuk pengajuan kerja sama dan sampel produk.\"*\n- **Jika pengguna menanyakan jaminan penghasilan / janji viral:**  \n  Sampaikan secara bijak *The Kerajaan Promise*: Kerajaan Agency tidak menjanjikan angka instan atau janji viral tanpa usaha, namun menyediakan ekosistem teruji, sistem seleksi, materi konten, dan pendampingan untuk memaksimalkan potensi penjualan.\n- **Jika pengguna menanyakan saluran informasi, channel, grup, atau berita terbaru:**  \n  Bagikan tautan saluran resmi Kerajaan Agency:\n  - Telegram Channel: https://t.me/+3ZJBNBYh8iU4MGM1\n  - WhatsApp Channel: https://whatsapp.com/chann",
+    "metadata": {
+      "document_id": "C002",
+      "type": "company",
+      "topic": "bot_persona_and_guidelines",
+      "active": true,
+      "source": "bot_persona_and_guidelines.md",
+      "source_path": "knowledge_base\\company\\bot_persona_and_guidelines.md",
+      "chunk_id": 3
+    }
+  },
+  {
+    "page_content": "Bagikan tautan saluran resmi Kerajaan Agency:\n  - Telegram Channel: https://t.me/+3ZJBNBYh8iU4MGM1\n  - WhatsApp Channel: https://whatsapp.com/channel/0029VbDUpC07T8bZYVq3KW02 (Saluran Resmi KERAJAAN AGENCY👑)",
+    "metadata": {
+      "document_id": "C002",
+      "type": "company",
+      "topic": "bot_persona_and_guidelines",
+      "active": true,
+      "source": "bot_persona_and_guidelines.md",
+      "source_path": "knowledge_base\\company\\bot_persona_and_guidelines.md",
+      "chunk_id": 4
+    }
+  },
+  {
+    "page_content": "# Profil Kerajaan Agency\n\n## 👑 Tentang Kerajaan Agency\n**Kerajaan Agency** adalah agensi yang mempertemukan pemilik produk (produsen, pabrik, dan pemilik brand) dengan para konten kreator, KOL, dan affiliate.\n\nKerajaan Agency hadir untuk menyelesaikan dua kebutuhan sekaligus:\n1. **Bagi Pemilik Produk / Brand:** Membantu memperluas penjualan secara masif melalui video promosi ratusan kreator di media sosial dan marketplace (seperti TikTok Shop dan Shopee).\n2. **Bagi Konten Kreator & Affiliate:** Menyediakan produk berkualitas dan siap jual. Kreator bisa menghasilkan komisi dari konten tanpa modal beli stok, tanpa sewa gudang, dan tanpa repot mengurus pengiriman paket.\n\n**Kerajaan Agency Bot** adalah asisten resmi di Telegram yang bertugas menyapa calon kreator dan pemilik produk, menjawab pertanyaan seputar agensi, menjelaskan keuntungan bergabung, serta memandu proses pendaftaran.\n\n> **Slogan Utama:**  \n> *CONNECT • CREATE • GROW*  \n> *PRODUK + KREATOR + KONTEN + DISTRIBUSI = PENJUALAN*\n\n---\n\n## 🎯 Visi & Misi",
     "metadata": {
       "document_id": "C001",
       "type": "company",
       "topic": "company_profile",
       "active": true,
       "source": "company_profile.md",
-      "source_path": "knowledge_base/company/company_profile.md",
+      "source_path": "knowledge_base\\company\\company_profile.md",
       "chunk_id": 0
     }
   },
   {
-    "page_content": "Commerce terkemuka di Indonesia yang menghubungkan produk berkualitas dengan jutaan konsumen melalui jaringan creator yang produktif.\"*\n\nKami tidak sekadar mengejar kuantitas pendaftar, melainkan membangun **jaringan creator yang aktif, konsisten, dan produktif**.\n\n### Misi\n1. **Membangun Jaringan Creator Produktif**: Menghubungkan kreator dengan produk yang relevan dan memiliki potensi konversi tinggi.\n2. **Mengembangkan Produk Berbasis Solusi**: Menyeleksi dan meluncurkan produk yang menyelesaikan masalah nyata konsumen (*problem-first*).\n3. **Membantu Produsen Membuka Jalur Distribusi Baru**: Membuka akses distribusi digital masif tanpa ketergantungan pada satu channel konvensional.\n4. **Membangun Content Ecosystem**: Menyediakan materi, sudut pandang (*content angles*), hook, dan panduan kreatif melalui *Content Factory*.\n5. **Membangun Commerce Ecosystem**: Mengintegrasikan creator, produk, marketplace (TikTok Shop, Shopee), platform website internal, customer, dan database performa.\n\n---\n\n## ⚙️ Tiga Mesin Utama Kerajaan Agency (The 3 Engines)\nKerajaan Agency bukan sekadar agency talent biasa atau jaringan affiliate lepas. Kami mengoperasikan 3 mesin terintegrasi:",
+    "page_content": "pendaftaran.\n\n> **Slogan Utama:**  \n> *CONNECT • CREATE • GROW*  \n> *PRODUK + KREATOR + KONTEN + DISTRIBUSI = PENJUALAN*\n\n---\n\n## 🎯 Visi & Misi\n\n### Visi\n> *\"Menjadi pusat kolaborasi bisnis dan kreator terdepan di Indonesia yang menghubungkan produk berkualitas dengan jutaan pembeli melalui jaringan konten kreator yang aktif dan produktif.\"*\n\nKami tidak sekadar mengejar banyaknya jumlah pendaftar, melainkan fokus membangun **komunitas kreator yang aktif berkarya dan menghasilkan penjualan nyata**.",
     "metadata": {
       "document_id": "C001",
       "type": "company",
       "topic": "company_profile",
       "active": true,
       "source": "company_profile.md",
-      "source_path": "knowledge_base/company/company_profile.md",
+      "source_path": "knowledge_base\\company\\company_profile.md",
       "chunk_id": 1
+    }
+  },
+  {
+    "page_content": "sekadar mengejar banyaknya jumlah pendaftar, melainkan fokus membangun **komunitas kreator yang aktif berkarya dan menghasilkan penjualan nyata**.\n\n### Misi\n1. **Membangun Jaringan Creator Produktif**: Menghubungkan kreator dengan produk yang relevan dan memiliki potensi konversi tinggi.\n2. **Mengembangkan Produk Berbasis Solusi**: Menyeleksi dan meluncurkan produk yang menyelesaikan masalah nyata konsumen (*problem-first*).\n3. **Membantu Produsen Membuka Jalur Distribusi Baru**: Membuka akses distribusi digital masif tanpa ketergantungan pada satu channel konvensional.\n4. **Membangun Content Ecosystem**: Menyediakan materi, sudut pandang (*content angles*), hook, dan panduan kreatif melalui *Content Factory*.\n5. **Membangun Commerce Ecosystem**: Mengintegrasikan creator, produk, marketplace (TikTok Shop, Shopee), platform website internal, customer, dan database performa.\n\n---\n\n## ⚙️ Tiga Mesin Utama Kerajaan Agency (The 3 Engines)\nKerajaan Agency bukan sekadar agency talent biasa atau jaringan affiliate lepas. Kami mengoperasikan 3 mesin terintegrasi:",
+    "metadata": {
+      "document_id": "C001",
+      "type": "company",
+      "topic": "company_profile",
+      "active": true,
+      "source": "company_profile.md",
+      "source_path": "knowledge_base\\company\\company_profile.md",
+      "chunk_id": 2
     }
   },
   {
@@ -199,8 +235,8 @@
       "topic": "company_profile",
       "active": true,
       "source": "company_profile.md",
-      "source_path": "knowledge_base/company/company_profile.md",
-      "chunk_id": 2
+      "source_path": "knowledge_base\\company\\company_profile.md",
+      "chunk_id": 3
     }
   },
   {
@@ -211,20 +247,20 @@
       "topic": "company_profile",
       "active": true,
       "source": "company_profile.md",
-      "source_path": "knowledge_base/company/company_profile.md",
-      "chunk_id": 3
+      "source_path": "knowledge_base\\company\\company_profile.md",
+      "chunk_id": 4
     }
   },
   {
-    "page_content": "**Level 4 — Full Commerce Ecosystem**: Ekosistem terintegrasi yang digerakkan data, teknologi analitik, dan AI (*Creator-Powered Commerce*).\n\n---\n\n## 🌐 Akses Pendaftaran & Website Resmi\nSeluruh proses pendaftaran KOL/Creator dan pengajuan kerja sama Produsen diarahkan secara resmi melalui website:\n- **Tautan Pendaftaran KOL/Creator:** `https://kerajaanagency.com/daftar-kol` (Halaman pendaftaran resmi website sedang difinalisasi/coming soon untuk publik).\n- **Kemitraan Mitra Produsen:** Kunjungi portal resmi atau hubungi narahubung Kerajaan Agency untuk pengajuan kurasi produk.",
+    "page_content": "**Level 4 — Full Commerce Ecosystem**: Ekosistem terintegrasi yang digerakkan data, teknologi analitik, dan AI (*Creator-Powered Commerce*).\n\n---\n\n## 🌐 Akses Pendaftaran & Website Resmi\nSeluruh proses pendaftaran KOL/Creator dan pengajuan kerja sama Produsen diarahkan secara resmi melalui website:\n- **Tautan Pendaftaran KOL/Creator:** `https://kerajaanagency.com/daftar-kol` (Halaman pendaftaran resmi website sedang difinalisasi/coming soon untuk publik).\n- **Kemitraan Mitra Produsen:** Kunjungi portal resmi atau hubungi narahubung Kerajaan Agency untuk pengajuan kurasi produk.\n\n---\n\n## 📢 Saluran Informasi Resmi & Komunitas Kerajaan Agency\nUntuk melihat katalog produk terbaru, jadwal live workshop, tips algoritma video FYP, serta pengumuman resmi Kerajaan Agency, ikuti saluran resmi kami:\n- **Telegram Channel:** https://t.me/+3ZJBNBYh8iU4MGM1\n- **WhatsApp Channel:** https://whatsapp.com/channel/0029VbDUpC07T8bZYVq3KW02 (Saluran Resmi KERAJAAN AGENCY👑)",
     "metadata": {
       "document_id": "C001",
       "type": "company",
       "topic": "company_profile",
       "active": true,
       "source": "company_profile.md",
-      "source_path": "knowledge_base/company/company_profile.md",
-      "chunk_id": 4
+      "source_path": "knowledge_base\\company\\company_profile.md",
+      "chunk_id": 5
     }
   },
   {
@@ -235,7 +271,7 @@
       "topic": "creator_journey_levels",
       "active": true,
       "source": "creator_journey_levels.md",
-      "source_path": "knowledge_base/ecosystem/creator_journey_levels.md",
+      "source_path": "knowledge_base\\ecosystem\\creator_journey_levels.md",
       "chunk_id": 0
     }
   },
@@ -247,7 +283,7 @@
       "topic": "creator_journey_levels",
       "active": true,
       "source": "creator_journey_levels.md",
-      "source_path": "knowledge_base/ecosystem/creator_journey_levels.md",
+      "source_path": "knowledge_base\\ecosystem\\creator_journey_levels.md",
       "chunk_id": 1
     }
   },
@@ -259,7 +295,7 @@
       "topic": "creator_journey_levels",
       "active": true,
       "source": "creator_journey_levels.md",
-      "source_path": "knowledge_base/ecosystem/creator_journey_levels.md",
+      "source_path": "knowledge_base\\ecosystem\\creator_journey_levels.md",
       "chunk_id": 2
     }
   },
@@ -271,7 +307,7 @@
       "topic": "creator_journey_levels",
       "active": true,
       "source": "creator_journey_levels.md",
-      "source_path": "knowledge_base/ecosystem/creator_journey_levels.md",
+      "source_path": "knowledge_base\\ecosystem\\creator_journey_levels.md",
       "chunk_id": 3
     }
   },
@@ -283,7 +319,7 @@
       "topic": "creator_journey_levels",
       "active": true,
       "source": "creator_journey_levels.md",
-      "source_path": "knowledge_base/ecosystem/creator_journey_levels.md",
+      "source_path": "knowledge_base\\ecosystem\\creator_journey_levels.md",
       "chunk_id": 4
     }
   },
@@ -295,7 +331,7 @@
       "topic": "model_bisnis_dan_flywheel",
       "active": true,
       "source": "model_bisnis_dan_flywheel.md",
-      "source_path": "knowledge_base/ecosystem/model_bisnis_dan_flywheel.md",
+      "source_path": "knowledge_base\\ecosystem\\model_bisnis_dan_flywheel.md",
       "chunk_id": 0
     }
   },
@@ -307,7 +343,7 @@
       "topic": "model_bisnis_dan_flywheel",
       "active": true,
       "source": "model_bisnis_dan_flywheel.md",
-      "source_path": "knowledge_base/ecosystem/model_bisnis_dan_flywheel.md",
+      "source_path": "knowledge_base\\ecosystem\\model_bisnis_dan_flywheel.md",
       "chunk_id": 1
     }
   },
@@ -319,7 +355,7 @@
       "topic": "model_bisnis_dan_flywheel",
       "active": true,
       "source": "model_bisnis_dan_flywheel.md",
-      "source_path": "knowledge_base/ecosystem/model_bisnis_dan_flywheel.md",
+      "source_path": "knowledge_base\\ecosystem\\model_bisnis_dan_flywheel.md",
       "chunk_id": 2
     }
   },
@@ -331,7 +367,7 @@
       "topic": "model_bisnis_dan_flywheel",
       "active": true,
       "source": "model_bisnis_dan_flywheel.md",
-      "source_path": "knowledge_base/ecosystem/model_bisnis_dan_flywheel.md",
+      "source_path": "knowledge_base\\ecosystem\\model_bisnis_dan_flywheel.md",
       "chunk_id": 3
     }
   },
@@ -343,7 +379,7 @@
       "topic": "model_bisnis_dan_flywheel",
       "active": true,
       "source": "model_bisnis_dan_flywheel.md",
-      "source_path": "knowledge_base/ecosystem/model_bisnis_dan_flywheel.md",
+      "source_path": "knowledge_base\\ecosystem\\model_bisnis_dan_flywheel.md",
       "chunk_id": 4
     }
   },
@@ -355,7 +391,7 @@
       "topic": "model_bisnis_dan_flywheel",
       "active": true,
       "source": "model_bisnis_dan_flywheel.md",
-      "source_path": "knowledge_base/ecosystem/model_bisnis_dan_flywheel.md",
+      "source_path": "knowledge_base\\ecosystem\\model_bisnis_dan_flywheel.md",
       "chunk_id": 5
     }
   },
@@ -367,8 +403,56 @@
       "topic": "model_bisnis_dan_flywheel",
       "active": true,
       "source": "model_bisnis_dan_flywheel.md",
-      "source_path": "knowledge_base/ecosystem/model_bisnis_dan_flywheel.md",
+      "source_path": "knowledge_base\\ecosystem\\model_bisnis_dan_flywheel.md",
       "chunk_id": 6
+    }
+  },
+  {
+    "page_content": "# FAQ: Content Factory, Sudut Pandang Konten, & Dukungan Kreatif\n\n## 🎬 Pertanyaan Seputar Content Factory & Materi Konten\n\n**Tanya:** Apa itu Content Factory di Kerajaan Agency?  \n**Jawab:** Content Factory adalah mesin produksi kreatif internal Kerajaan Agency yang dirancang untuk membedah sebuah produk menjadi puluhan materi dan sudut pandang promosi (*content angles*). Tujuannya agar kreator tidak perlu bingung memikirkan ide atau naskah dari nol, melainkan langsung mendapatkan formula konten yang terbukti menghasilkan interaksi dan penjualan (*traffic to conversion*).\n\n**Tanya:** Mengapa satu produk harus diubah menjadi banyak sudut pandang konten (*content angles*)?  \n**Jawab:** Setiap audiens memiliki preferensi dan alasan membeli yang berbeda-beda. Satu audiens mungkin tertarik karena penjelasan solusi masalah, sementara yang lain tertarik karena melihat demonstrasi langsung atau perbandingan dengan produk lain. Dengan menyediakan beragam sudut pandang, kreator dapat memilih gaya yang paling cocok dengan kepribadian dan karakter audiensnya.",
+    "metadata": {
+      "document_id": "F004",
+      "type": "faq",
+      "topic": "faq_content_factory_dan_kreatif",
+      "active": true,
+      "source": "faq_content_factory_dan_kreatif.md",
+      "source_path": "knowledge_base\\faq\\faq_content_factory_dan_kreatif.md",
+      "chunk_id": 0
+    }
+  },
+  {
+    "page_content": "**Tanya:** Apa saja 12 sudut pandang konten (*Content Angles*) yang disediakan Kerajaan Agency?  \n**Jawab:** Content Factory menyediakan 12 variasi sudut pandang:\n1. **Problem Angle:** Menyoroti masalah atau keluhan nyata yang dialami konsumen.\n2. **Solution Angle:** Memperkenalkan produk sebagai solusi tepat atas masalah tersebut.\n3. **Demonstration Angle:** Memperlihatkan cara penggunaan produk secara praktis dan visual.\n4. **Comparison Angle:** Membandingkan keunggulan produk dengan alternatif lain.\n5. **Testimonial Angle:** Mengangkat ulasan nyata dan kepuasan pengguna.\n6. **Before/After Angle:** Memperlihatkan bukti transformasi nyata sebelum dan sesudah pemakaian.\n7. **Education Angle:** Memberikan edukasi, tips bermanfaat, atau fakta seputar manfaat bahan.\n8. **Review Angle:** Unboxing dan ulasan jujur fitur serta kualitas produk.\n9. **Storytelling Angle:** Mengemas promosi ke dalam cerita keseharian yang menyentuh emosi audiens.\n10. **FAQ Angle:** Menjawab keraguan atau pertanyaan umum calon pembeli.\n11. **Objection Angle:** Mematahkan alasan konsumen yang ragu untuk membeli (misal: harga, keamanan izin, keawetan).\n12. **Lifestyle Angle:** Menyelipkan produk ke dalam rutini",
+    "metadata": {
+      "document_id": "F004",
+      "type": "faq",
+      "topic": "faq_content_factory_dan_kreatif",
+      "active": true,
+      "source": "faq_content_factory_dan_kreatif.md",
+      "source_path": "knowledge_base\\faq\\faq_content_factory_dan_kreatif.md",
+      "chunk_id": 1
+    }
+  },
+  {
+    "page_content": "ematahkan alasan konsumen yang ragu untuk membeli (misal: harga, keamanan izin, keawetan).\n12. **Lifestyle Angle:** Menyelipkan produk ke dalam rutinitas gaya hidup yang estetis dan relevan.",
+    "metadata": {
+      "document_id": "F004",
+      "type": "faq",
+      "topic": "faq_content_factory_dan_kreatif",
+      "active": true,
+      "source": "faq_content_factory_dan_kreatif.md",
+      "source_path": "knowledge_base\\faq\\faq_content_factory_dan_kreatif.md",
+      "chunk_id": 2
+    }
+  },
+  {
+    "page_content": "**Tanya:** Apa itu Content Kit dan apa saja isinya?  \n**Jawab:** Content Kit adalah paket pendukung pembuatan konten yang dibagikan kepada kreator untuk setiap produk terpilih. Isinya meliputi ide video pembuka (*hook* 3 detik pertama), draft naskah/skrip video teruji, daftar poin keunggulan produk (*selling points*), panduan Call to Action (CTA), serta aset visual pendukung.\n\n**Tanya:** Bagaimana jika saya belum mahir berbicara di depan kamera atau membuat skrip?  \n**Jawab:** Kerajaan Agency menyediakan pendampingan dan pelatihan rutin, mulai dari masterclass pembuatan konten, workshop live streaming, hingga konsultasi evaluasi video. Selain itu, ke depan sistem AI Content Assistant kami juga membantu menyusun hook, skrip, dan caption secara otomatis untuk mempermudah kreator.",
+    "metadata": {
+      "document_id": "F004",
+      "type": "faq",
+      "topic": "faq_content_factory_dan_kreatif",
+      "active": true,
+      "source": "faq_content_factory_dan_kreatif.md",
+      "source_path": "knowledge_base\\faq\\faq_content_factory_dan_kreatif.md",
+      "chunk_id": 3
     }
   },
   {
@@ -379,7 +463,7 @@
       "topic": "faq_creator_dan_komisi",
       "active": true,
       "source": "faq_creator_dan_komisi.md",
-      "source_path": "knowledge_base/faq/faq_creator_dan_komisi.md",
+      "source_path": "knowledge_base\\faq\\faq_creator_dan_komisi.md",
       "chunk_id": 0
     }
   },
@@ -391,7 +475,7 @@
       "topic": "faq_creator_dan_komisi",
       "active": true,
       "source": "faq_creator_dan_komisi.md",
-      "source_path": "knowledge_base/faq/faq_creator_dan_komisi.md",
+      "source_path": "knowledge_base\\faq\\faq_creator_dan_komisi.md",
       "chunk_id": 1
     }
   },
@@ -403,7 +487,7 @@
       "topic": "faq_creator_dan_komisi",
       "active": true,
       "source": "faq_creator_dan_komisi.md",
-      "source_path": "knowledge_base/faq/faq_creator_dan_komisi.md",
+      "source_path": "knowledge_base\\faq\\faq_creator_dan_komisi.md",
       "chunk_id": 2
     }
   },
@@ -415,8 +499,44 @@
       "topic": "faq_creator_dan_komisi",
       "active": true,
       "source": "faq_creator_dan_komisi.md",
-      "source_path": "knowledge_base/faq/faq_creator_dan_komisi.md",
+      "source_path": "knowledge_base\\faq\\faq_creator_dan_komisi.md",
       "chunk_id": 3
+    }
+  },
+  {
+    "page_content": "# FAQ: Jenjang Karir Kreator (Creator Journey) & Tingkat Kerajaan Warrior\n\n## 🏆 Pertanyaan Seputar Leveling & Jenjang Karir Kreator\n\n**Tanya:** Apa itu Creator Journey di Kerajaan Agency?  \n**Jawab:** Creator Journey adalah sistem jenjang pertumbuhan dan karir berjenjang bagi seluruh kreator yang bergabung di Kerajaan Agency. Sistem ini memberikan reward, akses fasilitas, dan peluang penghasilan yang semakin besar seiring meningkatnya konsistensi dan performa penjualan kreator.",
+    "metadata": {
+      "document_id": "F006",
+      "type": "faq",
+      "topic": "faq_creator_journey_dan_warrior",
+      "active": true,
+      "source": "faq_creator_journey_dan_warrior.md",
+      "source_path": "knowledge_base\\faq\\faq_creator_journey_dan_warrior.md",
+      "chunk_id": 0
+    }
+  },
+  {
+    "page_content": "ini memberikan reward, akses fasilitas, dan peluang penghasilan yang semakin besar seiring meningkatnya konsistensi dan performa penjualan kreator.\n\n**Tanya:** Apa saja 5 level tingkatan dalam Creator Journey?  \n**Jawab:** Terdapat 5 tingkatan level:\n1. **Level 1 — Member:** Kreator yang baru terdaftar dan terverifikasi di website resmi, mendapatkan akses katalog produk awal dan materi panduan dasar.\n2. **Level 2 — Active Creator:** Kreator yang mulai konsisten memproduksi konten promosi mingguan, mendapatkan akses pengajuan sampel produk dan materi Content Kit.\n3. **Level 3 — Productive Creator:** Kreator yang konsisten menghasilkan transaksi penjualan bulanan, mendapatkan kuota sampel reguler dan akses produk bermargin lebih tinggi.\n4. **Level 4 — Top Creator:** Kreator dengan omset transaksi (*GMV*) tinggi dan basis audiens loyal, mendapatkan prioritas peluncuran produk baru dan dukungan ekstra.\n5. **Level 5 — Kerajaan Warrior:** Tingkat prestasi tertinggi bagi kreator elit dengan dedikasi, loyalitas, dan kontribusi terbaik.",
+    "metadata": {
+      "document_id": "F006",
+      "type": "faq",
+      "topic": "faq_creator_journey_dan_warrior",
+      "active": true,
+      "source": "faq_creator_journey_dan_warrior.md",
+      "source_path": "knowledge_base\\faq\\faq_creator_journey_dan_warrior.md",
+      "chunk_id": 1
+    }
+  },
+  {
+    "page_content": "dukungan ekstra.\n5. **Level 5 — Kerajaan Warrior:** Tingkat prestasi tertinggi bagi kreator elit dengan dedikasi, loyalitas, dan kontribusi terbaik.\n\n**Tanya:** Apa saja hak istimewa yang didapatkan oleh level Kerajaan Warrior?  \n**Jawab:** Kreator pada level Kerajaan Warrior mendapatkan hak istimewa eksklusif:\n- Peluang skema kerja sama bagi hasil (*Revenue Sharing*) dan lini produk eksklusif (*Private Label*).\n- Alokasi sampel produk tanpa batas untuk kategori terkait.\n- Kesempatan menjadi mentor tamu berbayar dalam workshop komunitas agensi.\n- Pertemuan eksklusif bersama jajaran manajemen agensi dan pemilik brand.\n\n**Tanya:** Mengapa kreator di Kerajaan Agency disebut tidak perlu menjadi pedagang tradisional?  \n**Jawab:** Karena di ekosistem Kerajaan Agency, Anda tidak perlu mengeluarkan modal untuk membeli stok, tidak perlu memiliki gudang, tidak perlu packing pesanan, dan tidak perlu mengurus pengiriman paket. Seluruh operasional logistik ditangani oleh sistem dan produsen. Kreator cukup berfokus 100% pada **Content + Audience + Sales**.",
+    "metadata": {
+      "document_id": "F006",
+      "type": "faq",
+      "topic": "faq_creator_journey_dan_warrior",
+      "active": true,
+      "source": "faq_creator_journey_dan_warrior.md",
+      "source_path": "knowledge_base\\faq\\faq_creator_journey_dan_warrior.md",
+      "chunk_id": 2
     }
   },
   {
@@ -427,19 +547,19 @@
       "topic": "faq_pendaftaran_dan_website",
       "active": true,
       "source": "faq_pendaftaran_dan_website.md",
-      "source_path": "knowledge_base/faq/faq_pendaftaran_dan_website.md",
+      "source_path": "knowledge_base\\faq\\faq_pendaftaran_dan_website.md",
       "chunk_id": 0
     }
   },
   {
-    "page_content": "ada oknum atau pihak mana pun yang meminta pembayaran untuk pendaftaran akun Kerajaan Agency, mohon diabaikan karena itu adalah tindakan penipuan.\n\n**Tanya:** Apa saja data yang perlu saya siapkan sebelum membuka website untuk mendaftar sebagai KOL?  \n**Jawab:** Data yang perlu Anda siapkan:\n1. Nomor WhatsApp aktif dan alamat email.\n2. Tautan (*link*) profil media sosial utama Anda (TikTok, Instagram, YouTube, dll.).\n3. Kategori/niche konten utama Anda (misal: Beauty, Fashion, Kuliner, Gadget, Family, dsb.).\n4. Jumlah pengikut (*followers*) terkini dan gambaran interaksi (*engagement*).\n5. Alamat pengiriman lengkap untuk keperluan pengiriman sampel produk gratis jika lolos kurasi.\n\n**Tanya:** Berapa lama proses peninjauan (review) setelah saya mengisi formulir di website?  \n**Jawab:** Tim kurasi Kerajaan Agency membutuhkan waktu sekitar **1 hingga 3 hari kerja** untuk meninjau formulir pendaftaran Anda. Anda akan menerima notifikasi status penerimaan melalui WhatsApp resmi atau email yang Anda cantumkan.",
+    "page_content": "ada oknum atau pihak mana pun yang meminta pembayaran untuk pendaftaran akun Kerajaan Agency, mohon diabaikan karena itu adalah tindakan penipuan.\n\n**Tanya:** Apa saja data yang perlu saya siapkan sebelum membuka website untuk mendaftar sebagai KOL?  \n**Jawab:** Data yang perlu Anda siapkan:\n1. Nomor WhatsApp aktif dan alamat email.\n2. Tautan (*link*) profil media sosial utama Anda (TikTok, Instagram, YouTube, dll.).\n3. Kategori/niche konten utama Anda (misal: Beauty, Skincare, Fashion, Lifestyle, Gadget, Family, dsb.).\n4. Jumlah pengikut (*followers*) terkini dan gambaran interaksi (*engagement*).\n5. Alamat pengiriman lengkap untuk keperluan pengiriman sampel produk gratis jika lolos kurasi.\n\n**Tanya:** Berapa lama proses peninjauan (review) setelah saya mengisi formulir di website?  \n**Jawab:** Tim kurasi Kerajaan Agency membutuhkan waktu sekitar **1 hingga 3 hari kerja** untuk meninjau formulir pendaftaran Anda. Anda akan menerima notifikasi status penerimaan melalui WhatsApp resmi atau email yang Anda cantumkan.",
     "metadata": {
       "document_id": "F003",
       "type": "faq",
       "topic": "faq_pendaftaran_dan_website",
       "active": true,
       "source": "faq_pendaftaran_dan_website.md",
-      "source_path": "knowledge_base/faq/faq_pendaftaran_dan_website.md",
+      "source_path": "knowledge_base\\faq\\faq_pendaftaran_dan_website.md",
       "chunk_id": 1
     }
   },
@@ -451,19 +571,115 @@
       "topic": "faq_pendaftaran_dan_website",
       "active": true,
       "source": "faq_pendaftaran_dan_website.md",
-      "source_path": "knowledge_base/faq/faq_pendaftaran_dan_website.md",
+      "source_path": "knowledge_base\\faq\\faq_pendaftaran_dan_website.md",
       "chunk_id": 2
     }
   },
   {
-    "page_content": "# FAQ: Tanya Jawab Kemitraan Produsen, Pabrik, & Maklon\n\n## 🏭 Pertanyaan Umum Produsen & Brand Owner\n\n**Tanya:** Siapa saja pihak produsen yang dapat mengajukan kerja sama dengan Kerajaan Agency?  \n**Jawab:** Kami membuka kemitraan untuk:\n- Pabrik manufaktur dan industri olahan.\n- Perusahaan penyedia jasa maklon (kosmetik, herbal, suplemen, makanan kemasan).\n- Pemilik brand lokal (*brand owners*) yang ingin memperluas kanal distribusi digital.\n- Distributor resmi dan supplier produk berstandar nasional.\n\n**Tanya:** Apa syarat wajib bagi produk yang ingin didistribusikan melalui jaringan Kerajaan Agency?  \n**Jawab:** Produk wajib memiliki:\n1. **Legalitas Resmi:** Izin edar yang masih berlaku (BPOM, Sertifikasi Halal MUI, Kemenkes, SNI, atau izin edar P-IRT resmi sesuai kategori produk).\n2. **Kualitas Konsisten:** Mutu bahan baku, formula, dan kemasan yang aman serta terstandarisasi.\n3. **Kapasitas Pasokan:** Kemampuan memenuhi lonjakan pesanan ribuan pcs per bulan saat kampanye berskala besar.\n4. **Harga Pokok Bersaing:** Memberikan ruang margin yang sehat untuk komisi kreator dan profit berkelanjutan.",
+    "page_content": "2), namun Anda sudah dapat mengakses tautan tersebut untuk mengajukan pendaftaran sebagai KOL/Creator atau menghubungi narahubung kemitraan produsen.\n\n**Tanya:** Di mana saya bisa melihat atau mengecek informasi, pengumuman, dan katalog produk terbaru dari Kerajaan Agency?  \n**Jawab:** Anda dapat mengikuti saluran resmi kami untuk selalu mendapatkan kabar dan pengumuman terbaru:\n- **Telegram Channel:** https://t.me/+3ZJBNBYh8iU4MGM1\n- **WhatsApp Channel:** https://whatsapp.com/channel/0029VbDUpC07T8bZYVq3KW02 (Saluran Resmi KERAJAAN AGENCY👑)\nMelalui saluran ini, kami membagikan update seputar produk terlaris (*winning products*), jadwal live class dan mentoring, program komisi, serta tips FYP.",
+    "metadata": {
+      "document_id": "F003",
+      "type": "faq",
+      "topic": "faq_pendaftaran_dan_website",
+      "active": true,
+      "source": "faq_pendaftaran_dan_website.md",
+      "source_path": "knowledge_base\\faq\\faq_pendaftaran_dan_website.md",
+      "chunk_id": 3
+    }
+  },
+  {
+    "page_content": "# FAQ: Nilai, Prinsip Kerja, & Janji Agensi (The Kerajaan Promise)\n\n## 🤝 Pertanyaan Seputar Filosofi & Prinsip Agensi\n\n**Tanya:** Apa yang membedakan Kerajaan Agency dengan agency KOL biasa?  \n**Jawab:** Kerajaan Agency bukan sekadar agency talent yang memungut biaya endorsement di muka, dan bukan sekadar affiliate network biasa. Kami membangun ekosistem perdagangan berbasis creator (*Creator-Powered Commerce*) yang mengoperasikan 3 mesin terpadu:\n1. **Distribution Engine:** Jaringan ratusan kreator yang diaktifkan berdasarkan performa nyata.\n2. **Product Engine:** Riset dan seleksi produk solutif (*problem-first*).\n3. **Content Engine (Content Factory):** Produksi ide, hook, naskah, dan materi promosi masif.",
+    "metadata": {
+      "document_id": "F007",
+      "type": "faq",
+      "topic": "faq_prinsip_dan_komitmen",
+      "active": true,
+      "source": "faq_prinsip_dan_komitmen.md",
+      "source_path": "knowledge_base\\faq\\faq_prinsip_dan_komitmen.md",
+      "chunk_id": 0
+    }
+  },
+  {
+    "page_content": "Riset dan seleksi produk solutif (*problem-first*).\n3. **Content Engine (Content Factory):** Produksi ide, hook, naskah, dan materi promosi masif.\n\n**Tanya:** Apa itu prinsip \"One Product — Many Creators\" dan \"One Creator — Many Products\"?  \n**Jawab:** \n- **One Product — Many Creators:** Satu produk tidak digantungkan pada satu influencer saja, melainkan didistribusikan ke puluhan kreator sekaligus untuk menciptakan kepadatan promosi (*distribution density*) di media sosial.\n- **One Creator — Many Products:** Kreator tidak terikat pada satu produk saja, melainkan bebas memilih portofolio produk terkurasi yang cocok dengan niche audiensnya untuk memaksimalkan potensi penghasilan.",
+    "metadata": {
+      "document_id": "F007",
+      "type": "faq",
+      "topic": "faq_prinsip_dan_komitmen",
+      "active": true,
+      "source": "faq_prinsip_dan_komitmen.md",
+      "source_path": "knowledge_base\\faq\\faq_prinsip_dan_komitmen.md",
+      "chunk_id": 1
+    }
+  },
+  {
+    "page_content": "satu produk saja, melainkan bebas memilih portofolio produk terkurasi yang cocok dengan niche audiensnya untuk memaksimalkan potensi penghasilan.\n\n**Tanya:** Apa itu \"The Kerajaan Promise\"? Apakah agensi menjanjikan setiap konten pasti viral atau omset pasti meledak?  \n**Jawab:** Sesuai dengan *The Kerajaan Promise*, kami **tidak pernah menjanjikan** bahwa setiap produk pasti langsung viral, atau setiap kreator pasti langsung kaya dalam semalam. Bisnis yang sehat bukan dibangun dari janji manis kosong, melainkan dari **sistem yang dapat diuji, diukur, dan dikembangkan secara berkelanjutan**. Kami berkomitmen menyediakan ekosistem teruji, data pasar transparan, dan pendampingan terbaik untuk memperbesar peluang keberhasilan bersama.",
+    "metadata": {
+      "document_id": "F007",
+      "type": "faq",
+      "topic": "faq_prinsip_dan_komitmen",
+      "active": true,
+      "source": "faq_prinsip_dan_komitmen.md",
+      "source_path": "knowledge_base\\faq\\faq_prinsip_dan_komitmen.md",
+      "chunk_id": 2
+    }
+  },
+  {
+    "page_content": "Kami berkomitmen menyediakan ekosistem teruji, data pasar transparan, dan pendampingan terbaik untuk memperbesar peluang keberhasilan bersama.\n\n**Tanya:** Apa saja 6 prinsip kerja yang dipegang teguh oleh Kerajaan Agency?  \n**Jawab:** Kami beroperasi dengan 6 prinsip kerja:\n1. **Performance:** Menghargai kerja nyata dan hasil konversi.\n2. **Integrity:** Menjaga transparansi data penjualan dan komisi.\n3. **Data-Driven:** Mengambil keputusan bisnis berbasis data nyata, bukan spekulasi.\n4. **Collaboration:** Tumbuh bersama sebagai partner strategis jangka panjang.\n5. **Continuous Improvement:** Terus berinovasi, menguji, dan menyempurnakan strategi.\n6. **Win-Win:** Memastikan produsen, kreator, konsumen, dan agensi semuanya mendapatkan manfaat yang sehat dan adil.",
+    "metadata": {
+      "document_id": "F007",
+      "type": "faq",
+      "topic": "faq_prinsip_dan_komitmen",
+      "active": true,
+      "source": "faq_prinsip_dan_komitmen.md",
+      "source_path": "knowledge_base\\faq\\faq_prinsip_dan_komitmen.md",
+      "chunk_id": 3
+    }
+  },
+  {
+    "page_content": "# FAQ: Product Lab, Kriteria Seleksi Produk, & Sistem Pengujian Pasar\n\n## 🔬 Pertanyaan Seputar Product Lab & Kurasi Produk\n\n**Tanya:** Apa peran Product Lab di Kerajaan Agency?  \n**Jawab:** Product Lab adalah divisi riset dan kurasi produk yang bertugas menyaring, menguji, dan mengembangkan produk-produk potensial sebelum didistribusikan ke jaringan kreator. Product Lab memastikan bahwa setiap produk yang dipromosikan memiliki nilai nyata, legalitas terjamin, dan daya jual yang kuat di pasar.\n\n**Tanya:** Apa yang dimaksud dengan pendekatan \"Problem First\" dalam memilih produk?  \n**Jawab:** Pendekatan *Problem First* berarti kami tidak memilih produk semata-mata karena sedang tren sesaat di media sosial. Kami memulai dari pertanyaan: *\"Masalah nyata apa yang sedang dialami konsumen, dan apakah produk ini mampu memberikan solusi yang terbukti?\"* Produk yang menyelesaikan masalah nyata akan memiliki repeat order tinggi dan daya tahan pasar jangka panjang.",
+    "metadata": {
+      "document_id": "F005",
+      "type": "faq",
+      "topic": "faq_product_lab_dan_pengujian",
+      "active": true,
+      "source": "faq_product_lab_dan_pengujian.md",
+      "source_path": "knowledge_base\\faq\\faq_product_lab_dan_pengujian.md",
+      "chunk_id": 0
+    }
+  },
+  {
+    "page_content": "memberikan solusi yang terbukti?\"* Produk yang menyelesaikan masalah nyata akan memiliki repeat order tinggi dan daya tahan pasar jangka panjang.\n\n**Tanya:** Apa saja 7 kriteria produk yang dicari oleh Kerajaan Agency?  \n**Jawab:** Setiap produk dievaluasi berdasarkan 7 parameter:\n1. **Problem:** Menyelesaikan masalah nyata konsumen.\n2. **Demand:** Memiliki pangsa pasar dan permintaan yang cukup besar.\n3. **Margin:** Struktur biaya (*unit economics*) memungkinkan komisi sehat bagi kreator dan profit berkelanjutan.\n4. **Contentability:** Mudah didemonstrasikan dan menarik secara visual untuk format video pendek.\n5. **Differentiation:** Memiliki keunikan yang membedakan secara tegas dari kompetitor.\n6. **Repeat Order:** Berpotensi dibeli kembali secara berulang (*fast-moving*).\n7. **Operational:** Mudah diproduksi, stabil saat penyimpanan, dan aman dalam pengiriman logistik.",
+    "metadata": {
+      "document_id": "F005",
+      "type": "faq",
+      "topic": "faq_product_lab_dan_pengujian",
+      "active": true,
+      "source": "faq_product_lab_dan_pengujian.md",
+      "source_path": "knowledge_base\\faq\\faq_product_lab_dan_pengujian.md",
+      "chunk_id": 1
+    }
+  },
+  {
+    "page_content": "dibeli kembali secara berulang (*fast-moving*).\n7. **Operational:** Mudah diproduksi, stabil saat penyimpanan, dan aman dalam pengiriman logistik.\n\n**Tanya:** Bagaimana alur Product Testing System Kerajaan Agency bekerja?  \n**Jawab:** Sebelum produk diproduksi atau didistribusikan dalam skala raksasa, produk melalui alur pengujian bertahap:\n`1 Produk → Sampel → Uji Pilot 50–100 Kreator → Konten → Traffic → Order → Analisis Data Konversi & Unit Economics → Keputusan (Scale-Up / Improve / Stop)`.  \nDengan cara ini, keputusan bisnis diambil berdasarkan **data dan respons pasar nyata**, bukan sekadar asumsi atau spekulasi.\n\n**Tanya:** Apa yang terjadi jika hasil uji pilot suatu produk kurang memuaskan?  \n**Jawab:** Jika produk belum mencapai target konversi atau menerima masukan penting dari konsumen, tim Product Lab akan memberikan evaluasi kepada produsen untuk perbaikan (*improve* formulasi, kemasan, atau harga) atau menghentikan produk (*stop*) sebelum menimbulkan kerugian biaya bagi produsen dan kreator.",
+    "metadata": {
+      "document_id": "F005",
+      "type": "faq",
+      "topic": "faq_product_lab_dan_pengujian",
+      "active": true,
+      "source": "faq_product_lab_dan_pengujian.md",
+      "source_path": "knowledge_base\\faq\\faq_product_lab_dan_pengujian.md",
+      "chunk_id": 2
+    }
+  },
+  {
+    "page_content": "# FAQ: Tanya Jawab Kemitraan Produsen, Pabrik, & Maklon\n\n## 🏭 Pertanyaan Umum Produsen & Brand Owner\n\n**Tanya:** Siapa saja pihak produsen yang dapat mengajukan kerja sama dengan Kerajaan Agency?  \n**Jawab:** Kami membuka kemitraan untuk:\n- Pabrik manufaktur dan industri olahan.\n- Perusahaan penyedia jasa maklon (kosmetik, skincare, herbal, suplemen, perlengkapan rumah tangga, personal care).\n- Pemilik brand lokal (*brand owners*) yang ingin memperluas kanal distribusi digital.\n- Distributor resmi dan supplier produk berstandar nasional.\n\n**Tanya:** Apa syarat wajib bagi produk yang ingin didistribusikan melalui jaringan Kerajaan Agency?  \n**Jawab:** Produk wajib memiliki:\n1. **Legalitas Resmi:** Izin edar yang masih berlaku (BPOM, Sertifikasi Halal MUI, Kemenkes, atau SNI resmi sesuai kategori produk).\n2. **Kualitas Konsisten:** Mutu bahan baku, formula, dan kemasan yang aman serta terstandarisasi.\n3. **Kapasitas Pasokan:** Kemampuan memenuhi lonjakan pesanan ribuan pcs per bulan saat kampanye berskala besar.\n4. **Harga Pokok Bersaing:** Memberikan ruang margin yang sehat untuk komisi kreator dan profit berkelanjutan.",
     "metadata": {
       "document_id": "F002",
       "type": "faq",
       "topic": "faq_produsen_dan_maklon",
       "active": true,
       "source": "faq_produsen_dan_maklon.md",
-      "source_path": "knowledge_base/faq/faq_produsen_dan_maklon.md",
+      "source_path": "knowledge_base\\faq\\faq_produsen_dan_maklon.md",
       "chunk_id": 0
     }
   },
@@ -475,7 +691,7 @@
       "topic": "faq_produsen_dan_maklon",
       "active": true,
       "source": "faq_produsen_dan_maklon.md",
-      "source_path": "knowledge_base/faq/faq_produsen_dan_maklon.md",
+      "source_path": "knowledge_base\\faq\\faq_produsen_dan_maklon.md",
       "chunk_id": 1
     }
   },
@@ -487,7 +703,7 @@
       "topic": "faq_produsen_dan_maklon",
       "active": true,
       "source": "faq_produsen_dan_maklon.md",
-      "source_path": "knowledge_base/faq/faq_produsen_dan_maklon.md",
+      "source_path": "knowledge_base\\faq\\faq_produsen_dan_maklon.md",
       "chunk_id": 2
     }
   },
@@ -499,68 +715,8 @@
       "topic": "faq_produsen_dan_maklon",
       "active": true,
       "source": "faq_produsen_dan_maklon.md",
-      "source_path": "knowledge_base/faq/faq_produsen_dan_maklon.md",
+      "source_path": "knowledge_base\\faq\\faq_produsen_dan_maklon.md",
       "chunk_id": 3
-    }
-  },
-  {
-    "page_content": "# Harga Promo & Paket Rombongan\n\n**Tanya:** Apakah ada menu pilihan hemat untuk makan bersama/keluarga?\n**Jawab:** Ada, kami menyediakan pilihan Paket Rame-Rame (isi 4-10 porsi) yang lebih ekonomis untuk dinikmati bersama keluarga atau rekan kerja.\n\n**Tanya:** Apa menu paling favorit (best seller) di Ayam Bakar Pak D?\n**Jawab:** Menu paling direkomendasikan adalah Paket Ayam Bakar Bumbu Manis Gurih dipadukan dengan Sambal Korek dan Sayur Asem.\n\n**Tanya:** Apakah ada promo atau diskon pemesanan hari ini?\n**Jawab:** Kami sering mengadakan promo diskon menu dan potongan ongkir di platform GoFood, GrabFood, dan ShopeeFood. Silakan cek bagian banner promo di aplikasi Anda.",
-    "metadata": {
-      "document_id": "F003",
-      "type": "faq",
-      "topic": "harga_promo_dan_paket_rombongan",
-      "active": true,
-      "source": "harga_promo_dan_paket_rombongan.md",
-      "source_path": "knowledge_base/faq/harga_promo_dan_paket_rombongan.md",
-      "chunk_id": 0
-    }
-  },
-  {
-    "page_content": "# Kelengkapan Paket & Sambal\n\n**Tanya:** Jika memesan Paket Ayam Bakar apa saja isi di dalamnya?\n**Jawab:** Setiap pemesanan Paket Hemat Ayam Bakar sudah lengkap berisi: Ayam Bakar, Nasi Putih hangat, Sambal Khas Pak D, dan Lalapan segar.\n\n**Tanya:** Sambal jenis apa yang didapatkan dan apakah dipisah?\n**Jawab:** Kami menyediakan Sambal Terasi/Korek khas Pak D dengan tingkat kepedasan yang sedang hingga pedas mantap. Untuk menjaga kualitas dan kebersihan, sambal selalu dikemas dalam wadah/plastik terpisah.\n\n**Tanya:** Bisakah saya menambah ekstra sambal atau nasi?\n**Jawab:** Sangat bisa. Anda dapat menambahkan menu 'Ekstra Nasi Putih' atau 'Ekstra Sambal' pada kategori Add-On di aplikasi online.",
-    "metadata": {
-      "document_id": "F002",
-      "type": "faq",
-      "topic": "kelengkapan_paket_dan_sambal",
-      "active": true,
-      "source": "kelengkapan_paket_dan_sambal.md",
-      "source_path": "knowledge_base/faq/kelengkapan_paket_dan_sambal.md",
-      "chunk_id": 0
-    }
-  },
-  {
-    "page_content": "# Menu & Pilihan Produk\n\n**Tanya:** Tipe bumbu Ayam Bakar Pak D seperti apa?\n**Jawab:** Ayam Bakar Pak D disajikan dengan bumbu kecap manis gurih khas yang meresap hingga ke dalam daging, dibakar hingga menghasilkan aroma karamelisasi yang harum dan lezat.\n\n**Tanya:** Apakah saya bisa memilih bagian potong ayam?\n**Jawab:** Ya, Anda dapat memilih varian bagian ayam seperti Paha Atas, Paha Bawah, Dada, atau Sayap sesuai ketersediaan di aplikasi pemesanan online kami.\n\n**Tanya:** Seberapa besar porsi ayamnya?\n**Jawab:** Porsi potong ayam kami dirancang pas dan mengenyangkan untuk kebutuhan porsi makan satu orang dewasa.\n\n**Tanya:** Selain ayam bakar apakah ada pilihan menu lainnya?\n**Jawab:** Ada! Kami juga menyediakan menu Ayam Goreng Krispi/Kuning, Bebek Goreng/Bakar, Ati Ampela, Tahu, Tempe, Sayur Asem, serta berbagai pilihan minuman segar.",
-    "metadata": {
-      "document_id": "F001",
-      "type": "faq",
-      "topic": "menu_dan_pilihan_produk",
-      "active": true,
-      "source": "menu_dan_pilihan_produk.md",
-      "source_path": "knowledge_base/faq/menu_dan_pilihan_produk.md",
-      "chunk_id": 0
-    }
-  },
-  {
-    "page_content": "# Pemesanan Jumlah Banyak (Catering)\n\n**Tanya:** Bagaimana cara pesan Catering untuk acara khusus dalam jumlah banyak?\n**Jawab:** Untuk pemesanan acara/catering dalam jumlah besar, disarankan untuk melakukan pemesanan H-1 sampai H-2 melalui Direct Message Instagram atau nomor WhatsApp Admin Resmi outlet terdekat kami.",
-    "metadata": {
-      "document_id": "F005",
-      "type": "faq",
-      "topic": "pemesanan_jumlah_banyak",
-      "active": true,
-      "source": "pemesanan_jumlah_banyak.md",
-      "source_path": "knowledge_base/faq/pemesanan_jumlah_banyak.md",
-      "chunk_id": 0
-    }
-  },
-  {
-    "page_content": "# Pengemasan & Kualitas Delivery\n\n**Tanya:** Bagaimana pengemasan makanan untuk pemesanan online?\n**Jawab:** Makanan dikemas menggunakan kotak/thinwall food-grade yang rapat, tahan panas, dan higienis sehingga aman dari tumpah selama perjalanan oleh kurir.\n\n**Tanya:** Apakah Ayam Bakar Pak D dipastikan Halal?\n**Jawab:** Ya, 100% Halal. Seluruh bahan baku dan proses pengolahannya memenuhi standar kehalalan.",
-    "metadata": {
-      "document_id": "F004",
-      "type": "faq",
-      "topic": "pengemasan_dan_kualitas_delivery",
-      "active": true,
-      "source": "pengemasan_dan_kualitas_delivery.md",
-      "source_path": "knowledge_base/faq/pengemasan_dan_kualitas_delivery.md",
-      "chunk_id": 0
     }
   },
   {
@@ -571,19 +727,19 @@
       "topic": "kriteria_produk_dan_kategori",
       "active": true,
       "source": "kriteria_produk_dan_kategori.md",
-      "source_path": "knowledge_base/products/kriteria_produk_dan_kategori.md",
+      "source_path": "knowledge_base\\products\\kriteria_produk_dan_kategori.md",
       "chunk_id": 0
     }
   },
   {
-    "page_content": "Seleksi Produk Kerajaan Agency\nSetiap produk yang diajukan oleh produsen atau maklon wajib lolos evaluasi 7 parameter ketat di *Product Lab*:\n\n1. **Problem (Solutif Nyata):** Produk wajib menyelesaikan keluhan riil konsumen (misalnya: flek hitam membandel, bau mulut, noda kerak membandel, kebersihan dapur praktis, dll.).\n2. **Demand (Pasar Luas):** Memiliki basis pasar yang besar dan aktif berbelanja di platform digital/marketplace.\n3. **Margin (Unit Economics Sehat):** Struktur biaya memungkinkan alokasi komisi yang menarik bagi kreator serta profit margin yang sehat bagi produsen dan agensi.\n4. **Contentability (Mudah Dibuat Konten):** Memiliki elemen visual dramatis (*visual hook*), mudah didemonstrasikan dalam video 15–60 detik, serta mudah dipahami manfaatnya oleh audiens.\n5. **Differentiation (Diferensiasi Jelas):** Memiliki keunikan (*Unique Selling Proposition / USP*) yang membedakannya secara tegas dari produk kompetitor di pasar.\n6. **Repeat Order (Potensi Beli Ulang):** Produk cepat habis pakai (*fast-moving consumable goods*) sehingga pembeli akan membeli kembali dalam kurun waktu 1–3 bulan.\n7. **Operational Feasibility (Kelayakan Operasional):** Tidak mudah pecah, tahan dalam suhu pengiriman logistik nusantara, serta kapasitas produksi pabrik siap menghadapi lonjakan pesanan ribuan pcs per hari.",
+    "page_content": "Seleksi Produk Kerajaan Agency\nSetiap produk yang diajukan oleh produsen atau maklon wajib lolos evaluasi 7 parameter ketat di *Product Lab*:\n\n1. **Problem (Solutif Nyata):** Produk wajib menyelesaikan keluhan riil konsumen (misalnya: flek hitam membandel, noda kerak membandel, kulit kering, kerapian rumah tangga, dll.).\n2. **Demand (Pasar Luas):** Memiliki basis pasar yang besar dan aktif berbelanja di platform digital/marketplace.\n3. **Margin (Unit Economics Sehat):** Struktur biaya memungkinkan alokasi komisi yang menarik bagi kreator serta profit margin yang sehat bagi produsen dan agensi.\n4. **Contentability (Mudah Dibuat Konten):** Memiliki elemen visual dramatis (*visual hook*), mudah didemonstrasikan dalam video 15–60 detik, serta mudah dipahami manfaatnya oleh audiens.\n5. **Differentiation (Diferensiasi Jelas):** Memiliki keunikan (*Unique Selling Proposition / USP*) yang membedakannya secara tegas dari produk kompetitor di pasar.\n6. **Repeat Order (Potensi Beli Ulang):** Produk cepat habis pakai (*fast-moving consumable goods*) sehingga pembeli akan membeli kembali dalam kurun waktu 1–3 bulan.\n7. **Operational Feasibility (Kelayakan Operasional):** Tidak mudah pecah, tahan dalam suhu pengiriman logistik nusantara, serta kapasitas produksi pabrik siap menghadapi lonjakan pesanan ribuan pcs per hari.",
     "metadata": {
       "document_id": "P001",
       "type": "products",
       "topic": "kriteria_produk_dan_kategori",
       "active": true,
       "source": "kriteria_produk_dan_kategori.md",
-      "source_path": "knowledge_base/products/kriteria_produk_dan_kategori.md",
+      "source_path": "knowledge_base\\products\\kriteria_produk_dan_kategori.md",
       "chunk_id": 1
     }
   },
@@ -595,31 +751,31 @@
       "topic": "kriteria_produk_dan_kategori",
       "active": true,
       "source": "kriteria_produk_dan_kategori.md",
-      "source_path": "knowledge_base/products/kriteria_produk_dan_kategori.md",
+      "source_path": "knowledge_base\\products\\kriteria_produk_dan_kategori.md",
       "chunk_id": 2
     }
   },
   {
-    "page_content": "yang tidak memenuhi standar konversi pada tahap pilot test akan segera dievaluasi atau dihentikan sebelum membebani biaya produsen.\n\n---\n\n## 📦 Kategori Produk yang Diterima di Ekosistem Kerajaan Agency\nKerajaan Agency membuka peluang distribusi untuk beragam kategori produk yang memenuhi izin edar resmi (BPOM/Halal/Kemenkes/SNI/P-IRT):\n- **Beauty & Skincare:** Perawatan kulit, pembersih wajah, serum, perlindungan matahari, dan kosmetik dekoratif yang aman ber-BPOM.\n- **Health, Wellness & Herbal:** Suplemen kesehatan harian, minuman serbuk herbal, vitamin, dan produk kebugaran terstandarisasi.\n- **Home & Living Essentials:** Pembersih serbaguna inovatif, aroma terapi, peralatan dapur praktis, dan solusi perawatan rumah tangga.\n- **Food & Beverage Kemasan:** Cemilan khas berkualitas, bumbu instan higienis, kopi, dan makanan olahan tahan simpan.\n- **Fashion & Daily Wear:** Busana muslim, pakaian kasual berkarakter, aksesori fungsional, dan tas/dompet lokal berkualitas.\n- **Personal Care & Hygiene:** Sabun organik, perawatan rambut, parfum, dan produk perawatan diri harian.\n\n---",
+    "page_content": "yang tidak memenuhi standar konversi pada tahap pilot test akan segera dievaluasi atau dihentikan sebelum membebani biaya produsen.\n\n---\n\n## 📦 Kategori Produk yang Diterima di Ekosistem Kerajaan Agency\nKerajaan Agency membuka peluang distribusi untuk beragam kategori produk non-makanan yang memenuhi izin edar resmi (BPOM/Halal/Kemenkes/SNI):\n- **Beauty & Skincare:** Perawatan kulit, pembersih wajah, serum, perlindungan matahari, dan kosmetik dekoratif yang aman ber-BPOM.\n- **Health, Wellness & Herbal:** Suplemen kesehatan harian, vitamin, aromaterapi, dan produk kebugaran terstandarisasi.\n- **Home & Living Essentials:** Pembersih serbaguna inovatif, perlengkapan dekorasi rumah, wewangian ruangan, dan solusi perawatan rumah tangga praktis.\n- **Fashion & Daily Wear:** Busana muslim, pakaian kasual berkarakter, aksesori fungsional, dan tas/dompet lokal berkualitas.\n- **Personal Care & Hygiene:** Sabun organik, perawatan rambut, parfum, dan produk perawatan diri harian.\n- **Gadget & Daily Accessories:** Aksesori smartphone fungsional, perlengkapan kerja kreatif, dan peralatan penunjang aktivitas harian.\n\n---",
     "metadata": {
       "document_id": "P001",
       "type": "products",
       "topic": "kriteria_produk_dan_kategori",
       "active": true,
       "source": "kriteria_produk_dan_kategori.md",
-      "source_path": "knowledge_base/products/kriteria_produk_dan_kategori.md",
+      "source_path": "knowledge_base\\products\\kriteria_produk_dan_kategori.md",
       "chunk_id": 3
     }
   },
   {
-    "page_content": "dan tas/dompet lokal berkualitas.\n- **Personal Care & Hygiene:** Sabun organik, perawatan rambut, parfum, dan produk perawatan diri harian.\n\n---\n\n## 🏭 Ingin Mendaftarkan Produk Anda ke Product Lab?\nBagi produsen, pabrik, atau pemilik brand yang memiliki produk dengan kriteria di atas, silakan ajukan proposal produk dan kirimkan sampel ke tim Product Lab kami.\n\n👉 **Pendaftaran Produk:** Akses **Website Resmi Kerajaan Agency** dan pilih formulir pendaftaran **\"Mitra Produsen / Maklon\"**.",
+    "page_content": "harian.\n- **Gadget & Daily Accessories:** Aksesori smartphone fungsional, perlengkapan kerja kreatif, dan peralatan penunjang aktivitas harian.\n\n---\n\n## 🏭 Ingin Mendaftarkan Produk Anda ke Product Lab?\nBagi produsen, pabrik, atau pemilik brand yang memiliki produk dengan kriteria di atas, silakan ajukan proposal produk dan kirimkan sampel ke tim Product Lab kami.\n\n👉 **Pendaftaran Produk:** Akses **Website Resmi Kerajaan Agency** dan pilih formulir pendaftaran **\"Mitra Produsen / Maklon\"**.",
     "metadata": {
       "document_id": "P001",
       "type": "products",
       "topic": "kriteria_produk_dan_kategori",
       "active": true,
       "source": "kriteria_produk_dan_kategori.md",
-      "source_path": "knowledge_base/products/kriteria_produk_dan_kategori.md",
+      "source_path": "knowledge_base\\products\\kriteria_produk_dan_kategori.md",
       "chunk_id": 4
     }
   },
@@ -631,7 +787,7 @@
       "topic": "program_dan_kampanye_aktif",
       "active": true,
       "source": "program_dan_kampanye_aktif.md",
-      "source_path": "knowledge_base/promotion/program_dan_kampanye_aktif.md",
+      "source_path": "knowledge_base\\promotion\\program_dan_kampanye_aktif.md",
       "chunk_id": 0
     }
   },
@@ -643,7 +799,7 @@
       "topic": "program_dan_kampanye_aktif",
       "active": true,
       "source": "program_dan_kampanye_aktif.md",
-      "source_path": "knowledge_base/promotion/program_dan_kampanye_aktif.md",
+      "source_path": "knowledge_base\\promotion\\program_dan_kampanye_aktif.md",
       "chunk_id": 1
     }
   },
@@ -655,7 +811,7 @@
       "topic": "program_dan_kampanye_aktif",
       "active": true,
       "source": "program_dan_kampanye_aktif.md",
-      "source_path": "knowledge_base/promotion/program_dan_kampanye_aktif.md",
+      "source_path": "knowledge_base\\promotion\\program_dan_kampanye_aktif.md",
       "chunk_id": 2
     }
   },
@@ -667,7 +823,7 @@
       "topic": "program_dan_kampanye_aktif",
       "active": true,
       "source": "program_dan_kampanye_aktif.md",
-      "source_path": "knowledge_base/promotion/program_dan_kampanye_aktif.md",
+      "source_path": "knowledge_base\\promotion\\program_dan_kampanye_aktif.md",
       "chunk_id": 3
     }
   },
@@ -679,19 +835,19 @@
       "topic": "alur_pendaftaran_creator",
       "active": true,
       "source": "alur_pendaftaran_creator.md",
-      "source_path": "knowledge_base/registration/alur_pendaftaran_creator.md",
+      "source_path": "knowledge_base\\registration\\alur_pendaftaran_creator.md",
       "chunk_id": 0
     }
   },
   {
-    "page_content": "tautan resmi pendaftaran: `https://kerajaanagency.com/daftar-kol`\n- Klik tombol **\"Daftar Jadi KOL\"** atau ikuti petunjuk pendaftaran yang tertera.\n\n### Langkah 2: Isi Formulir Registrasi Online\nLengkapi informasi profil yang diminta pada form pendaftaran:\n1. **Data Pribadi:** Nama lengkap, nomor WhatsApp aktif (untuk verifikasi dan undangan grup komunitas), serta alamat email.\n2. **Platform Media Sosial:** Tautan (*link*) profil utama Anda (TikTok, Instagram, YouTube, dll.).\n3. **Niche / Kategori Konten:** Pilih kategori yang paling sesuai dengan audiens Anda (misalnya: Kecantikan/Skincare, Fashion, Kuliner/Food, Home & Living, Gadget/Teknologi, Parenting, Kesehatan/Fitness, atau Lifestyle).\n4. **Metrik Sosial Media:** Masukkan jumlah pengikut (*followers*) terkini dan estimasi rata-rata views video Anda.\n5. **Rate Card (Opsional):** Jika Anda telah memiliki rate card sebelumnya, silakan lampirkan.",
+    "page_content": "tautan resmi pendaftaran: `https://kerajaanagency.com/daftar-kol`\n- Klik tombol **\"Daftar Jadi KOL\"** atau ikuti petunjuk pendaftaran yang tertera.\n\n### Langkah 2: Isi Formulir Registrasi Online\nLengkapi informasi profil yang diminta pada form pendaftaran:\n1. **Data Pribadi:** Nama lengkap, nomor WhatsApp aktif (untuk verifikasi dan undangan grup komunitas), serta alamat email.\n2. **Platform Media Sosial:** Tautan (*link*) profil utama Anda (TikTok, Instagram, YouTube, dll.).\n3. **Niche / Kategori Konten:** Pilih kategori yang paling sesuai dengan audiens Anda (misalnya: Kecantikan/Skincare, Fashion, Home & Living, Gadget/Teknologi, Parenting, Kesehatan/Fitness, atau Lifestyle).\n4. **Metrik Sosial Media:** Masukkan jumlah pengikut (*followers*) terkini dan estimasi rata-rata views video Anda.\n5. **Rate Card (Opsional):** Jika Anda telah memiliki rate card sebelumnya, silakan lampirkan.",
     "metadata": {
       "document_id": "R001",
       "type": "registration",
       "topic": "alur_pendaftaran_creator",
       "active": true,
       "source": "alur_pendaftaran_creator.md",
-      "source_path": "knowledge_base/registration/alur_pendaftaran_creator.md",
+      "source_path": "knowledge_base\\registration\\alur_pendaftaran_creator.md",
       "chunk_id": 1
     }
   },
@@ -703,7 +859,7 @@
       "topic": "alur_pendaftaran_creator",
       "active": true,
       "source": "alur_pendaftaran_creator.md",
-      "source_path": "knowledge_base/registration/alur_pendaftaran_creator.md",
+      "source_path": "knowledge_base\\registration\\alur_pendaftaran_creator.md",
       "chunk_id": 2
     }
   },
@@ -715,7 +871,7 @@
       "topic": "alur_pendaftaran_creator",
       "active": true,
       "source": "alur_pendaftaran_creator.md",
-      "source_path": "knowledge_base/registration/alur_pendaftaran_creator.md",
+      "source_path": "knowledge_base\\registration\\alur_pendaftaran_creator.md",
       "chunk_id": 3
     }
   },
@@ -727,43 +883,43 @@
       "topic": "kemitraan_produsen_maklon",
       "active": true,
       "source": "kemitraan_produsen_maklon.md",
-      "source_path": "knowledge_base/registration/kemitraan_produsen_maklon.md",
+      "source_path": "knowledge_base\\registration\\kemitraan_produsen_maklon.md",
       "chunk_id": 0
     }
   },
   {
-    "page_content": "Buka website resmi Kerajaan Agency di browser Anda.\n- Arahkan ke menu navigasi **\"Mitra\"** atau tombol **\"Daftar Kemitraan Produsen/Brand\"**.\n\n### 2. Isi Formulir Kerja Sama Produk\nLengkapi data yang dibutuhkan:\n- **Informasi Bisnis:** Nama Perusahaan / Pabrik / Badan Usaha, alamat operasional, dan kontak PIC / Manajemen.\n- **Profil Produk:** Nama brand/produk, kategori produk (misal: Kosmetik/Skincare, Suplemen/Kesehatan, Makanan & Minuman Kemasan, Fashion, Home Goods, Peralatan Rumah Tangga, dsb.).\n- **Kelengkapan Legalitas:** Nomor izin edar (BPOM, Sertifikat Halal MUI, Kemenkes, SNI, atau P-IRT).\n- **Struktur Harga:** Estimasi HPP (Harga Pokok Produksi), harga grosir yang ditawarkan, dan HET (Harga Eceran Tertinggi) yang berlaku di pasar.\n- **Kapasitas Produksi:** Kemampuan volume produksi per minggu atau per bulan jika permintaan melonjak.\n- **Tautan Toko / Portofolio:** Tautan toko resmi (Shopee, TikTok Shop, Tokopedia) atau website brand jika sudah ada.",
+    "page_content": "Buka website resmi Kerajaan Agency di browser Anda.\n- Arahkan ke menu navigasi **\"Mitra\"** atau tombol **\"Daftar Kemitraan Produsen/Brand\"**.\n\n### 2. Isi Formulir Kerja Sama Produk\nLengkapi data yang dibutuhkan:\n- **Informasi Bisnis:** Nama Perusahaan / Pabrik / Badan Usaha, alamat operasional, dan kontak PIC / Manajemen.\n- **Profil Produk:** Nama brand/produk, kategori produk (misal: Kosmetik/Skincare, Suplemen/Kesehatan, Personal Care, Fashion, Home Living, Aksesori/Gadget, dsb.).\n- **Kelengkapan Legalitas:** Nomor izin edar (BPOM, Sertifikat Halal MUI, Kemenkes, atau SNI).\n- **Struktur Harga:** Estimasi HPP (Harga Pokok Produksi), harga grosir yang ditawarkan, dan HET (Harga Eceran Tertinggi) yang berlaku di pasar.\n- **Kapasitas Produksi:** Kemampuan volume produksi per minggu atau per bulan jika permintaan melonjak.\n- **Tautan Toko / Portofolio:** Tautan toko resmi (Shopee, TikTok Shop, Tokopedia) atau website brand jika sudah ada.\n\n### 3. Peninjauan Awal oleh Tim Product Lab (1–3 Hari Kerja)\nTim Business Development dan Product Lab Kerajaan akan melakukan verifikasi legalitas dan kecocokan produk terhadap kriteria *problem-solving* serta potensi konten di media sosial.",
     "metadata": {
       "document_id": "R002",
       "type": "registration",
       "topic": "kemitraan_produsen_maklon",
       "active": true,
       "source": "kemitraan_produsen_maklon.md",
-      "source_path": "knowledge_base/registration/kemitraan_produsen_maklon.md",
+      "source_path": "knowledge_base\\registration\\kemitraan_produsen_maklon.md",
       "chunk_id": 1
     }
   },
   {
-    "page_content": "bulan jika permintaan melonjak.\n- **Tautan Toko / Portofolio:** Tautan toko resmi (Shopee, TikTok Shop, Tokopedia) atau website brand jika sudah ada.\n\n### 3. Peninjauan Awal oleh Tim Product Lab (1–3 Hari Kerja)\nTim Business Development dan Product Lab Kerajaan akan melakukan verifikasi legalitas dan kecocokan produk terhadap kriteria *problem-solving* serta potensi konten di media sosial.\n\n### 4. Pengiriman Sampel Fisik ke Product Lab\nJika lolos peninjauan awal, produsen akan diminta mengirimkan sampel fisik produk ke alamat kantor/Product Lab Kerajaan Agency untuk pengujian kualitas, kemasan, aroma/tekstur, dan ketahanan pengiriman logistik.",
+    "page_content": "Lab Kerajaan akan melakukan verifikasi legalitas dan kecocokan produk terhadap kriteria *problem-solving* serta potensi konten di media sosial.\n\n### 4. Pengiriman Sampel Fisik ke Product Lab\nJika lolos peninjauan awal, produsen akan diminta mengirimkan sampel fisik produk ke alamat kantor/Product Lab Kerajaan Agency untuk pengujian kualitas, kemasan, aroma/tekstur, dan ketahanan pengiriman logistik.\n\n### 5. Diskusi Model Kerja Sama & Penandatanganan MoU\nKerajaan Agency dan produsen menentukan skema kerja sama yang paling tepat:\n- **Model 1 — Wholesale (Beli Putus):** Kerajaan Agency membeli stok produk untuk dipasarkan.\n- **Model 2 — Dropship & Fulfillment:** Stok tetap di gudang produsen, order otomatis diteruskan dan dikirim oleh produsen.\n- **Model 3 — Private Label:** Kerja sama manufaktur produk baru dengan brand kolaborasi.\n- **Model 4 — Revenue Sharing:** Bagi hasil margin bersih berbasis struktur biaya dan kontribusi masing-masing pihak.\n\n### 6. Pilot Testing 50–100 Creator & Scale-Up\nProduk masuk ke fase pengujian dengan 50–100 kreator pilot. Jika data konversi dan respon pasar positif, produk akan di-scale ke seluruh jaringan kreator Kerajaan Agency secara masif.\n\n---",
     "metadata": {
       "document_id": "R002",
       "type": "registration",
       "topic": "kemitraan_produsen_maklon",
       "active": true,
       "source": "kemitraan_produsen_maklon.md",
-      "source_path": "knowledge_base/registration/kemitraan_produsen_maklon.md",
+      "source_path": "knowledge_base\\registration\\kemitraan_produsen_maklon.md",
       "chunk_id": 2
     }
   },
   {
-    "page_content": "sampel fisik produk ke alamat kantor/Product Lab Kerajaan Agency untuk pengujian kualitas, kemasan, aroma/tekstur, dan ketahanan pengiriman logistik.\n\n### 5. Diskusi Model Kerja Sama & Penandatanganan MoU\nKerajaan Agency dan produsen menentukan skema kerja sama yang paling tepat:\n- **Model 1 — Wholesale (Beli Putus):** Kerajaan Agency membeli stok produk untuk dipasarkan.\n- **Model 2 — Dropship & Fulfillment:** Stok tetap di gudang produsen, order otomatis diteruskan dan dikirim oleh produsen.\n- **Model 3 — Private Label:** Kerja sama manufaktur produk baru dengan brand kolaborasi.\n- **Model 4 — Revenue Sharing:** Bagi hasil margin bersih berbasis struktur biaya dan kontribusi masing-masing pihak.\n\n### 6. Pilot Testing 50–100 Creator & Scale-Up\nProduk masuk ke fase pengujian dengan 50–100 kreator pilot. Jika data konversi dan respon pasar positif, produk akan di-scale ke seluruh jaringan kreator Kerajaan Agency secara masif.\n\n---\n\n> 💬 **Pesan dari Kerajaan Agency Bot:**  \n> *\"Ingin produk Anda menjadi produk pemenang (winning product) berikutnya? Segera kunjungi website resmi Kerajaan Agency dan ajukan produk Anda melalui formulir kemitraan produsen!\"*",
+    "page_content": "kreator pilot. Jika data konversi dan respon pasar positif, produk akan di-scale ke seluruh jaringan kreator Kerajaan Agency secara masif.\n\n---\n\n> 💬 **Pesan dari Kerajaan Agency Bot:**  \n> *\"Ingin produk Anda menjadi produk pemenang (winning product) berikutnya? Segera kunjungi website resmi Kerajaan Agency dan ajukan produk Anda melalui formulir kemitraan produsen!\"*",
     "metadata": {
       "document_id": "R002",
       "type": "registration",
       "topic": "kemitraan_produsen_maklon",
       "active": true,
       "source": "kemitraan_produsen_maklon.md",
-      "source_path": "knowledge_base/registration/kemitraan_produsen_maklon.md",
+      "source_path": "knowledge_base\\registration\\kemitraan_produsen_maklon.md",
       "chunk_id": 3
     }
   }

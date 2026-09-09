@@ -18,7 +18,7 @@ active: true
 **Jawab:** Data yang perlu Anda siapkan:
 1. Nomor WhatsApp aktif dan alamat email.
 2. Tautan (*link*) profil media sosial utama Anda (TikTok, Instagram, YouTube, dll.).
-3. Kategori/niche konten utama Anda (misal: Beauty, Fashion, Kuliner, Gadget, Family, dsb.).
+3. Kategori/niche konten utama Anda (misal: Beauty, Skincare, Fashion, Lifestyle, Gadget, Family, dsb.).
 4. Jumlah pengikut (*followers*) terkini dan gambaran interaksi (*engagement*).
 5. Alamat pengiriman lengkap untuk keperluan pengiriman sampel produk gratis jika lolos kurasi.
 
@@ -33,3 +33,9 @@ active: true
 
 **Tanya:** Di mana saya bisa mengakses link pendaftaran?  
 **Jawab:** Anda dapat mengakses tautan resmi pendaftaran di **https://kerajaanagency.com/daftar-kol**. Saat ini website pendaftaran resmi sedang dalam persiapan untuk peluncuran penuh (Phase 2), namun Anda sudah dapat mengakses tautan tersebut untuk mengajukan pendaftaran sebagai KOL/Creator atau menghubungi narahubung kemitraan produsen.
+
+**Tanya:** Di mana saya bisa melihat atau mengecek informasi, pengumuman, dan katalog produk terbaru dari Kerajaan Agency?  
+**Jawab:** Anda dapat mengikuti saluran resmi kami untuk selalu mendapatkan kabar dan pengumuman terbaru:
+- **Telegram Channel:** https://t.me/+3ZJBNBYh8iU4MGM1
+- **WhatsApp Channel:** https://whatsapp.com/channel/0029VbDUpC07T8bZYVq3KW02 (Saluran Resmi KERAJAAN AGENCY👑)
+Melalui saluran ini, kami membagikan update seputar produk terlaris (*winning products*), jadwal live class dan mentoring, program komisi, serta tips FYP.

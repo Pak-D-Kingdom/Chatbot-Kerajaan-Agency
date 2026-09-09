@@ -4,25 +4,29 @@ type: company
 topic: company_profile
 active: true
 ---
-# Profil Kerajaan Agency (Rebranding dari Kerajaan Agency)
+# Profil Kerajaan Agency
 
-## 👑 Tentang Kerajaan Agency (Kerajaan Agency)
-**Kerajaan Agency** (merupakan rebranding resmi dari **Kerajaan Agency**) adalah entitas dan ekosistem perdagangan berbasis creator (*Creator-Powered Commerce*). **Kerajaan Agency Bot** adalah chatbot representatif resmi di Telegram yang bertugas menyapa calon creator/KOL, affiliate, partner produsen/maklon, serta publik. Bot ini memberikan informasi lengkap seputar ekosistem agensi, keuntungan bergabung, program kolaborasi, serta memandu pendaftaran resmi.
+## 👑 Tentang Kerajaan Agency
+**Kerajaan Agency** adalah agensi yang mempertemukan pemilik produk (produsen, pabrik, dan pemilik brand) dengan para konten kreator, KOL, dan affiliate.
 
-**Kerajaan Agency (Kerajaan Agency)** menghubungkan produsen, pemilik produk, brand, dan pabrik maklon dengan jaringan KOL/Creator/Affiliate melalui sistem distribusi digital, content marketing, affiliate commerce, dan integrasi marketplace (TikTok Shop, Shopee, dll).
+Kerajaan Agency hadir untuk menyelesaikan dua kebutuhan sekaligus:
+1. **Bagi Pemilik Produk / Brand:** Membantu memperluas penjualan secara masif melalui video promosi ratusan kreator di media sosial dan marketplace (seperti TikTok Shop dan Shopee).
+2. **Bagi Konten Kreator & Affiliate:** Menyediakan produk berkualitas dan siap jual. Kreator bisa menghasilkan komisi dari konten tanpa modal beli stok, tanpa sewa gudang, dan tanpa repot mengurus pengiriman paket.
+
+**Kerajaan Agency Bot** adalah asisten resmi di Telegram yang bertugas menyapa calon kreator dan pemilik produk, menjawab pertanyaan seputar agensi, menjelaskan keuntungan bergabung, serta memandu proses pendaftaran.
 
 > **Slogan Utama:**  
 > *CONNECT • CREATE • GROW*  
-> *PRODUK + CREATOR + CONTENT + DISTRIBUTION = COMMERCE*
+> *PRODUK + KREATOR + KONTEN + DISTRIBUSI = PENJUALAN*
 
 ---
 
 ## 🎯 Visi & Misi
 
 ### Visi
-> *"Menjadi salah satu ekosistem Creator-Powered Commerce terkemuka di Indonesia yang menghubungkan produk berkualitas dengan jutaan konsumen melalui jaringan creator yang produktif."*
+> *"Menjadi pusat kolaborasi bisnis dan kreator terdepan di Indonesia yang menghubungkan produk berkualitas dengan jutaan pembeli melalui jaringan konten kreator yang aktif dan produktif."*
 
-Kami tidak sekadar mengejar kuantitas pendaftar, melainkan membangun **jaringan creator yang aktif, konsisten, dan produktif**.
+Kami tidak sekadar mengejar banyaknya jumlah pendaftar, melainkan fokus membangun **komunitas kreator yang aktif berkarya dan menghasilkan penjualan nyata**.
 
 ### Misi
 1. **Membangun Jaringan Creator Produktif**: Menghubungkan kreator dengan produk yang relevan dan memiliki potensi konversi tinggi.
@@ -68,3 +72,10 @@ Kami beroperasi dengan 6 prinsip kerja fundamental:
 Seluruh proses pendaftaran KOL/Creator dan pengajuan kerja sama Produsen diarahkan secara resmi melalui website:
 - **Tautan Pendaftaran KOL/Creator:** `https://kerajaanagency.com/daftar-kol` (Halaman pendaftaran resmi website sedang difinalisasi/coming soon untuk publik).
 - **Kemitraan Mitra Produsen:** Kunjungi portal resmi atau hubungi narahubung Kerajaan Agency untuk pengajuan kurasi produk.
+
+---
+
+## 📢 Saluran Informasi Resmi & Komunitas Kerajaan Agency
+Untuk melihat katalog produk terbaru, jadwal live workshop, tips algoritma video FYP, serta pengumuman resmi Kerajaan Agency, ikuti saluran resmi kami:
+- **Telegram Channel:** https://t.me/+3ZJBNBYh8iU4MGM1
+- **WhatsApp Channel:** https://whatsapp.com/channel/0029VbDUpC07T8bZYVq3KW02 (Saluran Resmi KERAJAAN AGENCY👑)
