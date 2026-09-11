@@ -172,7 +172,7 @@ async def start_command(
     """
     Menangani perintah /start dari user Telegram.
     Mengirimkan:
-    1. Flyer sambutan (assets/flyer.jpg)
+    1. Flyer sambutan (assets/flyer.jpeg)
     2. Dokumen PDF Company Profile (assets/company_profile.pdf)
     3. Bubble chat pesan selamat datang
     """
@@ -183,7 +183,7 @@ async def start_command(
     user_first_name = f" {update.effective_user.first_name}" if (update.effective_user and update.effective_user.first_name) else ""
 
     assets_dir = os.path.join(PROJECT_ROOT, "assets")
-    flyer_path = os.path.join(assets_dir, "flyer.jpg")
+    flyer_path = os.path.join(assets_dir, "flyer.jpeg")
     pdf_path = os.path.join(assets_dir, "company_profile.pdf")
 
     # 1. Kirim Flyer jika tersedia
